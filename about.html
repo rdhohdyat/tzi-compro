@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - PT Teknokrat Zamrud Integrasi</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Fira+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        .hero-bg {
+            position: relative;
+            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-shape-divider-bottom-1715243168 {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1715243168 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        .custom-shape-divider-bottom-1715243168 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .btn-transition {
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+        }
+
+        .btn-transition:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 0.25s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- ── NAVBAR ── -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a1628]/95 backdrop-blur-md border-b border-blue-900/40">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <div class="w-9 h-9 bg-blue-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <div class="leading-tight">
+                    <p class="text-white text-sm font-bold tracking-wide">PT Teknokrat</p>
+                    <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                </div>
+            </a>
+
+            <div
+                class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
+                <a href="index.html" class="nav-link hover:text-white transition-colors">Beranda</a>
+                <a href="about.html" class="nav-link hover:text-white transition-colors active text-blue-400">Tentang
+                    Kami</a>
+                <a href="service.html" class="nav-link hover:text-white transition-colors">Layanan</a>
+                <a href="product.html" class="nav-link hover:text-white transition-colors">Produk</a>
+                <a href="contact.html" class="nav-link hover:text-white transition-colors">Kontak</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="btn-transition hidden sm:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold uppercase tracking-widest px-5 py-2.5 rounded-lg shadow-lg shadow-blue-900/40">
+                    Minta Penawaran
+                    <iconify-icon icon="solar:arrow-right-bold" class="text-sm"></iconify-icon>
+                </a>
+                <button id="menu-open" class="md:hidden text-white text-3xl flex items-center">
+                    <iconify-icon icon="solar:hamburger-menu-bold"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── MOBILE MENU ── -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[60] bg-[#0a1628] translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+        <div class="p-8">
+            <div class="flex items-center justify-between mb-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-left">
+                    <div class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center">
+                        <img src="assets/img/logo.png" alt="" class="w-6">
+                    </div>
+                    <div class="leading-tight">
+                        <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
+                        <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                    </div>
+                </a>
+                <button id="menu-close" class="text-white text-4xl">
+                    <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
+                </button>
+            </div>
+
+            <nav class="flex flex-col gap-8 text-2xl font-black uppercase tracking-widest">
+                <a href="index.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Beranda
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="about.html"
+                    class="text-blue-400 flex items-center justify-between border-b border-white/5 pb-4">Tentang Kami
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="service.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Layanan
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="product.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Produk
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="contact.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Kontak
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+            </nav>
+
+            <div class="mt-16 pt-12 border-t border-blue-900/30">
+                <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Hubungi Kami</p>
+                <div class="space-y-6">
+                    <a href="tel:+6281371273367" class="flex items-center gap-4 text-white">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400 text-xl">
+                            <iconify-icon icon="solar:phone-bold"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Telepon</p>
+                            <p class="text-sm font-bold">+62 813-7127-3367</p>
+                        </div>
+                    </a>
+                    <a href="mailto:info@teknozi.com" class="flex items-center gap-4 text-white">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400 text-xl">
+                            <iconify-icon icon="solar:letter-bold"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Email</p>
+                            <p class="text-sm font-bold">info@teknozi.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="hero-bg min-h-[40vh] flex items-center pt-20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 w-full py-20 relative z-10 text-center md:text-left">
+            <div data-aos="fade-up">
+                <div class="flex items-center justify-center md:justify-start gap-3 text-blue-400 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+                    <p class="text-[11px] font-bold uppercase tracking-[0.2em]">Profil Perusahaan</p>
+                </div>
+                <h1 class="text-5xl md:text-7xl uppercase text-white leading-tight font-black">
+                    TENTANG <span class="text-blue-500">KAMI</span>
+                </h1>
+                <p class="text-slate-400 text-sm md:text-base max-w-2xl mt-4">
+                    Mengenal lebih dekat PT Teknokrat Zamrud Integrasi sebagai mitra terpercaya solusi teknologi dan
+                    integrasi sistem.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Curve Shape -->
+        <div class="custom-shape-divider-bottom-1715243168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ── PROFIL PERUSAHAAN ── -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+                <div data-aos="fade-right">
+                    <div
+                        class="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-600 mb-4 bg-blue-50 px-3 py-1 rounded-full">
+                        <iconify-icon icon="solar:calendar-bold-duotone"></iconify-icon>
+                        Sejak Maret 2023
+                    </div>
+                    <h2 class="text-4xl font-black uppercase text-slate-900 mb-6 leading-tight">
+                        PROFIL <br>
+                        <span class="text-blue-600">PT. TEKNOKRAT ZAMRUD INTEGRASI</span>
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        PT. Teknokrat Zamrud Integrasi merupakan perusahaan yang bergerak di bidang jasa penyedia dan
+                        instalasi produk Elektronika, Kelistrikan, Teknologi Informatika, Audio Video, Dekorasi
+                        Interior, Furnitur serta Alat Tulis Kantor.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 py-6 border-t border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:check-read-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wide text-slate-700">Terpercaya</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:settings-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wide text-slate-700">Terintegrasi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80"
+                            alt="Office Hallway" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl shadow-xl">
+                        <p class="text-xs font-bold uppercase tracking-widest mb-1">Kantor</p>
+                        <div class="w-12 h-1 bg-white/30 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── FILOSOFI NAMA ── -->
+            <div class="mb-24">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-black uppercase text-slate-900 mb-2">FILOSOFI <span
+                            class="text-blue-600">NAMA</span></h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 transition-all hover:border-blue-300 hover:shadow-xl group"
+                        data-aos="fade-up" data-aos-delay="0">
+                        <h3
+                            class="text-2xl font-black uppercase text-blue-600 mb-4 group-hover:scale-105 transition-transform origin-left">
+                            Teknokrat</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Cendekiawan yang menguasai teknik, teknologi,
+                            dan teknometrik.</p>
+                    </div>
+                    <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 transition-all hover:border-blue-300 hover:shadow-xl group"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <h3
+                            class="text-2xl font-black uppercase text-blue-600 mb-4 group-hover:scale-105 transition-transform origin-left">
+                            Zamrud</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Merujuk kepada wilayah nusantara sebagai
+                            zamrud khatulistiwa.</p>
+                    </div>
+                    <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 transition-all hover:border-blue-300 hover:shadow-xl group"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <h3
+                            class="text-2xl font-black uppercase text-blue-600 mb-4 group-hover:scale-105 transition-transform origin-left">
+                            Integrasi</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Kebulatan tekad untuk bersama-sama menjalankan
+                            satu visi dan misi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── TARGET MARKET ── -->
+            <div class="mb-24 bg-[#0a1628] rounded-[3rem] p-12 md:p-20 relative overflow-hidden text-white"
+                data-aos="zoom-in">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-black uppercase mb-12 text-center">TARGET MARKET <span
+                            class="text-blue-500">/ KLIEN</span></h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50">
+                                <iconify-icon icon="solar:buildings-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Office / Perkantoran</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Fasilitas perkantoran modern dengan
+                                    infrastruktur terintegrasi.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50">
+                                <iconify-icon icon="solar:case-minimalistic-bold-duotone"
+                                    class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Sekolah & Perguruan Tinggi</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Fasilitas pendidikan cerdas generasi
+                                    masa depan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50 opacity-80">
+                                <iconify-icon icon="solar:hospital-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Rumah Sakit</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Integrasi sistem kesehatan modern.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50 opacity-80">
+                                <iconify-icon icon="solar:home-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Rumah Ibadah</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Sistem audio video dan kelistrikan
+                                    terpadu.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50 opacity-80">
+                                <iconify-icon icon="solar:bus-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Ruang Publik & Transportasi</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Layanan publik yang cerdas dan
+                                    efisien.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-900/50 opacity-80">
+                                <iconify-icon icon="solar:videocamera-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase text-sm mb-1">Content Creator & Multimedia</h4>
+                                <p class="text-slate-400 text-xs leading-relaxed">Studio dan infrastruktur produksi
+                                    digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── SUSUNAN PENGURUS ── -->
+            <div>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-black uppercase text-slate-900 mb-2">SUSUNAN <span
+                            class="text-blue-600">PENGURUS</span></h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-12">
+                    <!-- Direktur -->
+                    <div class="w-full max-w-sm text-center" data-aos="fade-up" data-aos-delay="0">
+                        <div class="relative mb-6 mx-auto w-48 h-48">
+                            <div class="absolute inset-0 bg-blue-600 rounded-full rotate-6 opacity-10"></div>
+                            <img src="https://i.pravatar.cc/300?img=12" alt="Direktur"
+                                class="w-full h-full object-cover rounded-full border-4 border-white shadow-xl relative z-10">
+                        </div>
+                        <h4 class="text-2xl font-black uppercase text-slate-900 mb-1">Tengku Zulhendra Isa</h4>
+                        <p class="text-blue-600 text-xs font-bold uppercase tracking-widest">Direktur</p>
+                    </div>
+
+                    <!-- Komisaris -->
+                    <div class="w-full max-w-sm text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative mb-6 mx-auto w-48 h-48">
+                            <div class="absolute inset-0 bg-blue-600 rounded-full -rotate-6 opacity-10"></div>
+                            <img src="https://i.pravatar.cc/300?img=13" alt="Komisaris"
+                                class="w-full h-full object-cover rounded-full border-4 border-white shadow-xl relative z-10">
+                        </div>
+                        <h4 class="text-2xl font-black uppercase text-slate-900 mb-1">Ismail Abdul Rahman Siregar</h4>
+                        <p class="text-blue-600 text-xs font-bold uppercase tracking-widest">Komisaris</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ── INFORMASI KORPORAT & LEGALITAS ── -->
+            <div class="mt-24 pt-20 border-t border-slate-100">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-black uppercase text-slate-900 mb-2">LEGALITAS <span class="text-blue-600">& KORPORAT</span></h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Legal Item 1 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:document-text-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">Nomor Induk Berusaha (NIB)</h4>
+                        </div>
+                        <p class="text-slate-600 font-bold text-sm tracking-widest">0104230012715</p>
+                    </div>
+
+                    <!-- Legal Item 2 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:card-2-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">NPWP Perusahaan</h4>
+                        </div>
+                        <p class="text-slate-600 font-bold text-sm tracking-widest">40.442.825.2-211.000</p>
+                    </div>
+
+                    <!-- Legal Item 3 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:verified-check-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">Status Pajak (PKP)</h4>
+                        </div>
+                        <p class="text-slate-600 font-bold text-sm tracking-widest">Sejak 7 Maret 2024</p>
+                    </div>
+
+                    <!-- Legal Item 4 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:bill-list-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">Akta Pendirian</h4>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">No. 41, 29 Maret 2023</p>
+                    </div>
+
+                    <!-- Legal Item 5 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:diploma-verified-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">SK Kemenkumham</h4>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed uppercase">AHU-0025685.AH.01.01.TAHUN 2023</p>
+                    </div>
+
+                    <!-- Legal Item 6 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                <iconify-icon icon="solar:notebook-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-xs tracking-widest text-slate-900">Berita Negara</h4>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">No. 027, Terbit 4 April 2023</p>
+                    </div>
+                </div>
+
+                <!-- Banking & Address Highlight -->
+                <div class="mt-12 grid lg:grid-cols-2 gap-8">
+                    <div class="bg-blue-600 p-8 rounded-[2rem] text-white shadow-xl shadow-blue-900/20" data-aos="fade-right">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                                <iconify-icon icon="solar:bank-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-sm tracking-widest">Rekening Perusahaan</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-blue-200 text-[10px] uppercase font-bold tracking-widest mb-1">Nama Bank</p>
+                                <p class="text-lg font-bold">Bank BRI Cabang Pekanbaru Lancang Kuning</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-6 sm:gap-12">
+                                <div>
+                                    <p class="text-blue-200 text-[10px] uppercase font-bold tracking-widest mb-1">Nomor Rekening</p>
+                                    <p class="text-2xl font-black tracking-widest">1079-01-002545-56-9</p>
+                                </div>
+                                <div>
+                                    <p class="text-blue-200 text-[10px] uppercase font-bold tracking-widest mb-1">Atas Nama</p>
+                                    <p class="text-lg font-bold">PT. Teknokrat Zamrud Integrasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-[2rem] border border-slate-200" data-aos="fade-left">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 border border-blue-100">
+                                <iconify-icon icon="solar:map-point-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-black uppercase text-sm tracking-widest text-slate-900">Alamat Kantor</h4>
+                        </div>
+                        <p class="text-slate-500 text-lg leading-relaxed">
+                            Jl. Gunung Bendahara No. 16A, Kel. Pematang Kapau, Kec. Kulim, Kota Pekanbaru, Riau 28289
+                        </p>
+                        <div class="mt-6 pt-6 border-t border-slate-100 flex gap-4">
+                            <div class="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest">
+                                <iconify-icon icon="solar:mailbox-bold-duotone"></iconify-icon>
+                                Pekanbaru
+                            </div>
+                            <div class="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest">
+                                <iconify-icon icon="solar:global-bold-duotone"></iconify-icon>
+                                Riau, Indonesia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── MAP SECTION ── -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-black uppercase text-slate-900 mb-2">LOKASI <span class="text-blue-600">KAMI</span></h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-2xl shadow-slate-200/50" data-aos="zoom-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.67384351608!2d101.4860882740333!3d0.4731885637256195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ae8f26075191%3A0xe67f33918a221f70!2sJl.%20Gunung%20Bendahara%20No.16A%2C%20Pematang%20Kapau%2C%20Kec.%20Kulim%2C%20Kota%20Pekanbaru%2C%20Riau%2028289!5e0!3m2!1sid!2sid!4v1715264350123!5m2!1sid!2sid" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="bg-[#0a1628] pt-20 pb-10 border-t border-blue-900/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2.5 mb-6">
+                        <div class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <img src="assets/img/logo.png" alt="">
+                        </div>
+                        <div class="leading-tight">
+                            <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
+                            <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Spesialis integrasi teknis dan instalasi terkemuka yang berbasis di Pekanbaru.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                            <iconify-icon icon="solar:camera-bold"></iconify-icon>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                            <iconify-icon icon="solar:videocamera-record-bold"></iconify-icon>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                            <iconify-icon icon="solar:letter-bold"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Perusahaan</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Karir</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Cerita Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Layanan</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Instalasi
+                                Elektronika</a></li>
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Sistem HVAC
+                                (Pendingin)</a></li>
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Desain Interior</a>
+                        </li>
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Infrastruktur IT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Legal</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Status Layanan</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div
+                class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-[10px] font-bold uppercase tracking-[0.15em]">
+                <p>© 2026 PT. Teknokrat Zamrud Integrasi. Didirikan Maret 2023, Pekanbaru. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="index.html" class="hover:text-white transition-colors">Beranda</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true, offset: 80 });
+
+        // Mobile Menu Logic
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuOpen && menuClose && mobileMenu) {
+            menuOpen.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+
+            // Close on link click
+            const links = mobileMenu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

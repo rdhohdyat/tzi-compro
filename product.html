@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Produk - PT Teknokrat Zamrud Integrasi</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Fira+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 0.25s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .hero-bg {
+            position: relative;
+            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-shape-divider-bottom-1715243168 {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1715243168 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        .custom-shape-divider-bottom-1715243168 .shape-fill {
+            fill: #f8fafc;
+        }
+
+        .sidebar-item {
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-item.active {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border-color: #e2e8f0;
+        }
+
+        .btn-transition {
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+        }
+
+        .btn-transition:hover {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 antialiased">
+
+    <!-- ── NAVBAR ── -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a1628]/95 backdrop-blur-md border-b border-blue-900/40">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <div class="w-9 h-9 bg-blue-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <div class="leading-tight">
+                    <p class="text-white text-sm font-bold tracking-wide">PT Teknokrat</p>
+                    <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
+                <a href="index.html" class="nav-link hover:text-white transition-colors">Beranda</a>
+                <a href="about.html" class="nav-link hover:text-white transition-colors">Tentang Kami</a>
+                <a href="service.html" class="nav-link hover:text-white transition-colors">Layanan</a>
+                <a href="product.html" class="nav-link hover:text-white transition-colors active text-blue-400">Produk</a>
+                <a href="contact.html" class="nav-link hover:text-white transition-colors">Kontak</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="btn-transition hidden sm:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold uppercase tracking-widest px-5 py-2.5 rounded-lg shadow-lg shadow-blue-900/40">
+                    Minta Penawaran
+                    <iconify-icon icon="solar:arrow-right-bold" class="text-sm"></iconify-icon>
+                </a>
+                <button id="menu-open" class="md:hidden text-white text-3xl flex items-center">
+                    <iconify-icon icon="solar:hamburger-menu-bold"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── MOBILE MENU ── -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0a1628] translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+        <div class="p-8">
+            <div class="flex items-center justify-between mb-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-left">
+                    <div class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center">
+                        <img src="assets/img/logo.png" alt="" class="w-6">
+                    </div>
+                    <div class="leading-tight">
+                        <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
+                        <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                    </div>
+                </a>
+                <button id="menu-close" class="text-white text-4xl">
+                    <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
+                </button>
+            </div>
+            
+            <nav class="flex flex-col gap-8 text-2xl font-black uppercase tracking-widest">
+                <a href="index.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Beranda <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="about.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Tentang Kami <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="service.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Layanan <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="product.html" class="text-blue-400 flex items-center justify-between border-b border-white/5 pb-4">Produk <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="contact.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Kontak <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+            </nav>
+
+            <div class="mt-16 pt-12 border-t border-blue-900/30">
+                <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Hubungi Kami</p>
+                <div class="space-y-6">
+                    <a href="tel:+6281371273367" class="flex items-center gap-4 text-white">
+                        <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400 text-xl">
+                            <iconify-icon icon="solar:phone-bold"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Telepon</p>
+                            <p class="text-sm font-bold">+62 813-7127-3367</p>
+                        </div>
+                    </a>
+                    <a href="mailto:info@teknozi.com" class="flex items-center gap-4 text-white">
+                        <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400 text-xl">
+                            <iconify-icon icon="solar:letter-bold"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Email</p>
+                            <p class="text-sm font-bold">info@teknozi.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="hero-bg min-h-[40vh] flex items-center pt-20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 w-full py-20 relative z-10 text-center md:text-left">
+            <div data-aos="fade-up">
+                <div class="flex items-center justify-center md:justify-start gap-3 text-blue-400 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+                    <p class="text-[11px] font-bold uppercase tracking-[0.2em]">Koleksi Produk Terbaik</p>
+                </div>
+                <h1 class="text-5xl md:text-7xl uppercase text-white leading-tight font-black">
+                    KATALOG <span class="text-blue-500">PRODUK</span>
+                </h1>
+                <p class="text-slate-400 text-sm md:text-base max-w-2xl mt-4">
+                    Penyedia produk berkualitas tinggi untuk kebutuhan Elektronika, Kelistrikan, IT, hingga Interior dengan standar industri terbaik.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Curve Shape -->
+        <div class="custom-shape-divider-bottom-1715243168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ── MAIN CONTENT ── -->
+    <main class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-2xl font-black text-blue-600 mb-2 uppercase">Katalog Produk Utama</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+                </div>
+                <div class="w-full md:w-80 relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                        <iconify-icon icon="solar:magnifer-linear"></iconify-icon>
+                    </div>
+                    <input type="text" id="product-search" placeholder="Cari produk..." 
+                        class="w-full bg-white border border-slate-200 py-3 pl-10 pr-4 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all">
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- Sidebar Categories -->
+                <aside class="w-full lg:w-72 flex-shrink-0" data-aos="fade-right">
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-600 mb-6 ml-2">Kategori (KBLI)</p>
+                    <nav class="space-y-2">
+                        <button class="filter-btn sidebar-item active w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold transition-all text-left" data-filter="all">
+                            <iconify-icon icon="solar:display-linear" class="text-xl"></iconify-icon>
+                            <span>Komputer & Perlengkapan</span>
+                        </button>
+                        <button class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left" data-filter="audio">
+                            <iconify-icon icon="solar:volume-loud-linear" class="text-xl"></iconify-icon>
+                            <span>Peralatan Audio & Video</span>
+                        </button>
+                        <button class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left" data-filter="furnitur">
+                            <iconify-icon icon="solar:armchair-linear" class="text-xl"></iconify-icon>
+                            <span>Furnitur</span>
+                        </button>
+                        <button class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left" data-filter="atk">
+                            <iconify-icon icon="solar:pen-new-square-linear" class="text-xl"></iconify-icon>
+                            <span>Alat Tulis & Gambar</span>
+                        </button>
+                        <button class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left" data-filter="agen">
+                            <iconify-icon icon="solar:hand-money-linear" class="text-xl"></iconify-icon>
+                            <span>Agen / Perdagangan Kontrak</span>
+                        </button>
+                    </nav>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="flex-grow">
+                    <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        
+                        <!-- Product 1 -->
+                        <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full" data-category="all" data-aos="fade-up">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&auto=format&fit=crop&q=80" 
+                                    alt="PC Desktop" class="w-full h-full object-cover">
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-blue-600 text-white text-[9px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg shadow-lg">Featured</span>
+                                </div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-blue-500 text-[10px] font-bold mb-2">KBLI 47411</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">PC Desktop & Laptop</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Perdagangan eceran komputer, peralatan, aksesoris dan perlengkapannya.
+                                </p>
+                                <a href="contact.html" class="text-blue-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full" data-category="audio" data-aos="fade-up" data-aos-delay="100">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80" 
+                                    alt="Audio System" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-blue-500 text-[10px] font-bold mb-2">KBLI 47420</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Sistem Audio & Video</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Radio, Televisi, Video Player, Audio Amplifier, dan Peralatan Stereo.
+                                </p>
+                                <a href="contact.html" class="text-blue-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full" data-category="furnitur" data-aos="fade-up" data-aos-delay="200">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop&q=80" 
+                                    alt="Office Furniture" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-blue-500 text-[10px] font-bold mb-2">KBLI 47591</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Furnitur Kantor</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Meja & Kursi, Lemari, Rak Buku, Bufet untuk kebutuhan kantor dan komersial.
+                                </p>
+                                <a href="contact.html" class="text-blue-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                         <!-- Product 4 -->
+                         <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full" data-category="atk" data-aos="fade-up">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=800&auto=format&fit=crop&q=80" 
+                                    alt="Stationery" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-blue-500 text-[10px] font-bold mb-2">KBLI 47611</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Alat Tulis & Gambar</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Penyediaan ATK lengkap untuk perkantoran dan institusi pendidikan.
+                                </p>
+                                <a href="contact.html" class="text-blue-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full" data-category="it" data-aos="fade-up" data-aos-delay="100">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80" 
+                                    alt="Server Infrastructure" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-blue-500 text-[10px] font-bold mb-2">KBLI 43213</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Infrastruktur IT</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Pemasangan instalasi elektronika, jaringan data, dan pusat data terpadu.
+                                </p>
+                                <a href="contact.html" class="text-blue-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="bg-[#0a1628] pt-20 pb-10 border-t border-blue-900/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2.5 mb-6">
+                        <div class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <img src="assets/img/logo.png" alt="">
+                        </div>
+                        <div class="leading-tight">
+                            <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
+                            <p class="text-blue-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Spesialis integrasi teknis dan instalasi terkemuka yang berbasis di Pekanbaru.
+                    </p>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Perusahaan</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Karir</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Layanan</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Instalasi Elektronika</a></li>
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Sistem HVAC</a></li>
+                        <li><a href="service.html" class="hover:text-blue-400 transition-colors">Infrastruktur IT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Legal</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-10 border-t border-slate-800 text-center md:text-left text-slate-500 text-[10px] font-bold uppercase tracking-[0.15em]">
+                <p>© 2026 PT. Teknokrat Zamrud Integrasi. Pekanbaru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true, offset: 80 });
+
+        // Search & Filter Logic
+        const searchInput = document.getElementById('product-search');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        function filterProducts() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+            productItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const desc = item.querySelector('p').textContent.toLowerCase();
+                const category = item.dataset.category;
+                
+                const matchesSearch = title.includes(searchTerm) || desc.includes(searchTerm);
+                const matchesFilter = activeFilter === 'all' || category === activeFilter || category === 'all';
+
+                if (matchesSearch && matchesFilter) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterProducts);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.classList.remove('bg-blue-600', 'text-white'); // Fallback remove
+                    b.classList.remove('active'); // CSS will handle .active
+                });
+                btn.classList.add('active');
+                filterProducts();
+            });
+        });
+
+        // Mobile Menu Logic
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(menuOpen && menuClose && mobileMenu) {
+            menuOpen.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+        }
+    </script>
+</body>
+
+</html>
