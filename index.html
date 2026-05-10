@@ -269,7 +269,8 @@
                         <div
                             class="absolute -left-6 top-0 bottom-0 w-1 bg-red-600 rounded-full shadow-[0_0_15px_rgba(220,38,38,0.5)]">
                         </div>
-                        <h1 class="text-3xl sm:text-4xl md:text-7xl uppercase text-white leading-tight md:leading-[0.9] tracking-tight">
+                        <h1
+                            class="text-3xl sm:text-4xl md:text-7xl uppercase text-white leading-tight md:leading-[0.9] tracking-tight">
                             Solusi Teknologi <span class="hidden md:inline">&</span> <br class="md:hidden">
                             <span class="text-blue-500">Integrasi</span> <br class="hidden md:block">
                             untuk Kebutuhan Anda
@@ -337,14 +338,13 @@
             <!-- Image collage -->
             <div class="relative" data-aos="fade-right">
                 <div class="grid grid-cols-2 gap-2">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&auto=format&fit=crop&q=80"
-                        alt="Server" class="rounded-xl h-52 w-full object-cover col-span-2 shadow-md" />
-                    <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400&auto=format&fit=crop&q=80"
-                        alt="Network" class="rounded-xl h-44 w-full object-cover shadow-md" />
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&auto=format&fit=crop&q=80"
-                        alt="Tech" class="rounded-xl h-44 w-full object-cover shadow-md" />
+                    <img src="assets/img/pasang_ac.png" alt="Modern Office Technology"
+                        class="rounded-xl h-52 w-full object-cover col-span-2 shadow-md" />
+                    <img src="assets/img/installasi_listrik.png" alt="Instalasi Elektronika Kelistrikan"
+                        class="rounded-xl h-44 w-full object-cover shadow-md" />
+                    <img src="assets/img/pasang_cctv.png" alt="Audio Video System"
+                        class="rounded-xl h-44 w-full object-cover shadow-md" />
                 </div>
-
             </div>
 
             <!-- Text -->
@@ -473,8 +473,7 @@
                 <!-- Card 1: Instalasi Elektronika (Large) -->
                 <div class="md:col-span-7 relative group overflow-hidden rounded-xl sm:rounded-[2.5rem] min-h-[260px] md:min-h-[300px]"
                     data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80"
-                        alt="Circuit Board"
+                    <img src="assets/img/elektronik.png" alt="Circuit Board"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628]/95 via-[#0a1628]/40 to-transparent">
                     </div>
@@ -528,7 +527,7 @@
                 <!-- Card 4: Produk Perdagangan (Large) -->
                 <div class="md:col-span-7 relative group overflow-hidden rounded-xl sm:rounded-[2.5rem] min-h-[260px] md:min-h-[300px]"
                     data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1000&auto=format&fit=crop&q=80"
+                    <img src="assets/img/alat_kantor.png"
                         alt="Tech Office"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
@@ -793,39 +792,30 @@
                 transition-timing-function: linear !important;
             }
 
-            .logo-card {
-                background: white;
-                padding: 1.5rem 2rem;
-                border-radius: 1.25rem;
-                border: 1px solid #f1f5f9;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100px;
-                width: 200px;
-                transition: all 0.4s ease;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            }
-
-            .logo-card:hover {
-                border-color: #3b82f6;
-                box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.1);
-                transform: translateY(-5px);
-            }
-
             .m-logo {
-                max-height: 45px;
-                max-width: 100%;
+                height: 45px;
+                width: auto;
+                max-width: 180px;
                 object-fit: contain;
-                filter: grayscale(100%) contrast(0.8);
-                opacity: 0.5;
-                transition: all 0.4s ease;
+                filter: grayscale(100%) brightness(0.6) opacity(0.5);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
-            .logo-card:hover .m-logo {
-                filter: grayscale(0%) contrast(1);
-                opacity: 1;
-                position: relative;
+            .swiper-slide:hover .m-logo {
+                filter: grayscale(0%) brightness(1) opacity(1);
+                transform: scale(1.1);
+            }
+
+            @media (max-width: 768px) {
+                .m-logo {
+                    height: 30px;
+                    max-width: 120px;
+                }
+
+                .principals-slider .swiper-slide {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
             }
 
             .slider-container::before,
@@ -850,7 +840,7 @@
             }
         </style>
 
-        <div class="slider-container space-y-20">
+        <div class="slider-container space-y-10 md:space-y-20">
             <!-- Row 1: Moving Right -->
             <div class="swiper principals-slider swiper-left">
                 <div class="swiper-wrapper">
@@ -873,13 +863,13 @@
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo_Global_Corporate_Logo.png"
                             alt="Lenovo" class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/MSI_Logo.svg" alt="MSI"
+                            src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.png" alt="MSI"
                             class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Fujitsu-Logo.svg" alt="Fujitsu"
                             class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Panasonic_logo_blue.svg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28Blue%29.svg/3840px-Panasonic_logo_%28Blue%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
                             alt="Panasonic" class="m-logo"></div>
                 </div>
             </div>
@@ -888,7 +878,7 @@
             <div class="swiper principals-slider swiper-right">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide !w-auto px-10"><img
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Daikin_Industries_logo.svg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/DAIKIN_logo.svg/960px-DAIKIN_logo.svg.png?utm_source=id.wikibooks.org&utm_campaign=index&utm_content=thumbnail"
                             alt="Daikin" class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/LG_logo_%282015%29.svg" alt="LG"
@@ -903,7 +893,7 @@
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Toshiba_logo.svg" alt="Toshiba"
                             class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Carrier_Corporation_logo.svg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/3840px-Logo_of_the_Carrier_Corporation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
                             alt="Carrier" class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi_logo.svg"
@@ -912,7 +902,7 @@
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg" alt="Sony"
                             class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Sennheiser_logo.svg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sennheiser-logo-new.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
                             alt="Sennheiser" class="m-logo"></div>
                     <div class="swiper-slide !w-auto px-10"><img
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg" alt="Apple"
@@ -927,7 +917,8 @@
         style="background-image: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(37,99,235,0.15) 0%, transparent 70%);">
         <!-- Wave Divider Top -->
         <div class="custom-shape-divider-top-1715243168">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-40.86,82.39-15.3,168.19-14.33,250.45.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"></path>
@@ -941,7 +932,7 @@
                 Hubungi Kami
                 <span class="w-6 h-0.5 bg-blue-400 inline-block"></span>
             </div>
-            <h2 class="text-4xl md:text-6xl font-black uppercase text-white leading-none mb-5">
+            <h2 class="text-3xl md:text-6xl font-black uppercase text-white leading-none mb-5">
                 Siap Mengintegrasikan <span class="text-blue-400">Kebutuhan Anda?</span>
             </h2>
             <p class="text-slate-400 text-base max-w-xl mx-auto mb-10">
