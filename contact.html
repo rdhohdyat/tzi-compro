@@ -18,7 +18,10 @@
             font-family: 'Fira Sans', sans-serif;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Barlow Condensed', sans-serif;
         }
 
@@ -55,7 +58,7 @@
 
         .input-focus:focus {
             border-color: #3b82f6;
-            box-shadow: 0 0 0 4px rgba(59,130,246,0.1);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
             outline: none;
         }
 
@@ -86,6 +89,26 @@
         .nav-link.active::after {
             width: 100%;
         }
+
+        .custom-shape-divider-top-1715243168 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-top-1715243168 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+
+        .custom-shape-divider-top-1715243168 .shape-fill {
+            fill: #FFFFFF;
+        }
     </style>
 </head>
 
@@ -104,12 +127,14 @@
                 </div>
             </a>
 
-            <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
+            <div
+                class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                 <a href="index.html" class="nav-link hover:text-white transition-colors">Beranda</a>
                 <a href="about.html" class="nav-link hover:text-white transition-colors">Tentang Kami</a>
                 <a href="service.html" class="nav-link hover:text-white transition-colors">Layanan</a>
                 <a href="product.html" class="nav-link hover:text-white transition-colors">Produk</a>
-                <a href="contact.html" class="nav-link hover:text-white transition-colors active text-sky-400">Kontak</a>
+                <a href="contact.html"
+                    class="nav-link hover:text-white transition-colors active text-sky-400">Kontak</a>
             </div>
 
             <div class="flex items-center gap-4">
@@ -126,7 +151,8 @@
     </nav>
 
     <!-- ── MOBILE MENU ── -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0a1628] translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[60] bg-[#0a1628] translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
         <div class="p-8">
             <div class="flex items-center justify-between mb-16">
                 <a href="index.html" class="flex items-center gap-2.5 text-left">
@@ -142,20 +168,31 @@
                     <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
                 </button>
             </div>
-            
+
             <nav class="flex flex-col gap-8 text-2xl font-black uppercase tracking-widest">
-                <a href="index.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Beranda <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
-                <a href="about.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Tentang Kami <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
-                <a href="service.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Layanan <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
-                <a href="product.html" class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Produk <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
-                <a href="contact.html" class="text-sky-400 flex items-center justify-between border-b border-white/5 pb-4">Kontak <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="index.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Beranda
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="about.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Tentang
+                    Kami <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="service.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Layanan
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="product.html"
+                    class="text-slate-400 hover:text-white flex items-center justify-between border-b border-white/5 pb-4">Produk
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
+                <a href="contact.html"
+                    class="text-sky-400 flex items-center justify-between border-b border-white/5 pb-4">Kontak
+                    <iconify-icon icon="solar:arrow-right-outline" class="text-white/20"></iconify-icon></a>
             </nav>
 
             <div class="mt-16 pt-12 border-t border-sky-900/30">
                 <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Hubungi Kami</p>
                 <div class="space-y-6">
                     <a href="tel:+6281371273367" class="flex items-center gap-4 text-white">
-                        <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 text-xl">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 text-xl">
                             <iconify-icon icon="solar:phone-bold"></iconify-icon>
                         </div>
                         <div>
@@ -164,7 +201,8 @@
                         </div>
                     </a>
                     <a href="mailto:info@teknozi.com" class="flex items-center gap-4 text-white">
-                        <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 text-xl">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 text-xl">
                             <iconify-icon icon="solar:letter-bold"></iconify-icon>
                         </div>
                         <div>
@@ -189,15 +227,19 @@
                     HUBUNGI <span class="text-sky-500">KAMI</span>
                 </h1>
                 <p class="text-slate-400 text-sm md:text-base max-w-2xl mt-4">
-                    Konsultasikan kebutuhan teknologi dan integrasi Anda dengan kami. Tim kami siap membantu memberikan solusi terbaik.
+                    Konsultasikan kebutuhan teknologi dan integrasi Anda dengan kami. Tim kami siap membantu memberikan
+                    solusi terbaik.
                 </p>
             </div>
         </div>
 
         <!-- Bottom Curve Shape -->
         <div class="custom-shape-divider-bottom-1715243168">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </section>
@@ -209,17 +251,21 @@
                 <!-- Contact Info -->
                 <div class="space-y-10" data-aos="fade-right">
                     <div>
-                        <h2 class="text-3xl font-black uppercase text-slate-900 mb-6">Informasi <span class="text-sky-600">Kontak</span></h2>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Jangan ragu untuk menghubungi kami melalui saluran di bawah ini. Tim kami akan segera merespon Anda.</p>
+                        <h2 class="text-3xl font-black uppercase text-slate-900 mb-6">Informasi <span
+                                class="text-sky-600">Kontak</span></h2>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Jangan ragu untuk menghubungi kami
+                            melalui saluran di bawah ini. Tim kami akan segera merespon Anda.</p>
                     </div>
 
                     <div class="flex items-start gap-5">
                         <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-sky-600 text-2xl"></iconify-icon>
+                            <iconify-icon icon="solar:map-point-bold-duotone"
+                                class="text-sky-600 text-2xl"></iconify-icon>
                         </div>
                         <div>
                             <h4 class="text-lg font-black uppercase text-slate-900 mb-1">Alamat Kantor</h4>
-                            <p class="text-slate-500 text-sm">Jl. Gunung Bendahara No. 16A, Kel. Pematang Kapau, Kec. Kulim, Kota Pekanbaru, Riau 28289</p>
+                            <p class="text-slate-500 text-sm">Jl. Gunung Bendahara No. 16A, Kel. Pematang Kapau, Kec.
+                                Kulim, Kota Pekanbaru, Riau 28289</p>
                         </div>
                     </div>
 
@@ -246,27 +292,42 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="lg:col-span-2 bg-slate-50 p-3 sm:p-6 md:p-10 sm:rounded-3xl border border-slate-100" data-aos="fade-left">
-                    <h2 class="text-2xl md:text-3xl font-black uppercase text-slate-900 mb-6 md:mb-8">Kirim <span class="text-sky-600">Pesan</span></h2>
+                <div class="lg:col-span-2 bg-slate-50 p-3 sm:p-6 md:p-10 sm:rounded-3xl border border-slate-100"
+                    data-aos="fade-left">
+                    <h2 class="text-2xl md:text-3xl font-black uppercase text-slate-900 mb-6 md:mb-8">Kirim <span
+                            class="text-sky-600">Pesan</span></h2>
                     <form action="#" class="grid md:grid-cols-2 gap-4 md:gap-6">
                         <div class="space-y-1.5 md:space-y-2">
-                            <label class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Nama Lengkap</label>
-                            <input type="text" placeholder="Masukkan nama Anda" class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
+                            <label
+                                class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Nama
+                                Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda"
+                                class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
                         </div>
                         <div class="space-y-1.5 md:space-y-2">
-                            <label class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Alamat Email</label>
-                            <input type="email" placeholder="email@perusahaan.com" class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
+                            <label
+                                class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Alamat
+                                Email</label>
+                            <input type="email" placeholder="email@perusahaan.com"
+                                class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
                         </div>
                         <div class="space-y-1.5 md:space-y-2 md:col-span-2">
-                            <label class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Subjek Pesan</label>
-                            <input type="text" placeholder="Apa yang bisa kami bantu?" class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
+                            <label
+                                class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Subjek
+                                Pesan</label>
+                            <input type="text" placeholder="Apa yang bisa kami bantu?"
+                                class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus">
                         </div>
                         <div class="space-y-1.5 md:space-y-2 md:col-span-2">
-                            <label class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Isi Pesan</label>
-                            <textarea rows="4" placeholder="Tuliskan pesan Anda di sini..." class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus resize-none"></textarea>
+                            <label
+                                class="text-[9px] md:text-[10px] uppercase tracking-widest font-bold text-slate-400 ml-1">Isi
+                                Pesan</label>
+                            <textarea rows="4" placeholder="Tuliskan pesan Anda di sini..."
+                                class="w-full bg-white border border-slate-200 p-3.5 md:p-4 rounded-xl text-sm input-focus resize-none"></textarea>
                         </div>
                         <div class="md:col-span-2 pt-2 md:pt-4">
-                            <button type="submit" class="btn-transition w-full bg-sky-600 hover:bg-sky-700 text-white font-bold uppercase tracking-widest py-3.5 md:py-4 rounded-xl shadow-xl shadow-sky-900/20">
+                            <button type="submit"
+                                class="btn-transition w-full bg-sky-600 hover:bg-sky-700 text-white font-bold uppercase tracking-widest py-3.5 md:py-4 rounded-xl shadow-xl shadow-sky-900/20">
                                 Kirim Pesan Sekarang
                             </button>
                         </div>
@@ -280,9 +341,10 @@
     <section class="pb-24 bg-white">
         <div class="max-w-6xl mx-auto sm:px-6" data-aos="fade-up">
             <div class="rounded overflow-hidden border border-slate-200 shadow-2xl shadow-slate-200/50">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.67384351608!2d101.4860882740333!3d0.4731885637256195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ae8f26075191%3A0xe67f33918a221f70!2sJl.%20Gunung%20Bendahara%20No.16A%2C%20Pematang%20Kapau%2C%20Kec.%20Kulim%2C%20Kota%20Pekanbaru%2C%20Riau%2028289!5e0!3m2!1sid!2sid!4v1715264350123!5m2!1sid!2sid" 
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.67384351608!2d101.4860882740333!3d0.4731885637256195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ae8f26075191%3A0xe67f33918a221f70!2sJl.%20Gunung%20Bendahara%20No.16A%2C%20Pematang%20Kapau%2C%20Kec.%20Kulim%2C%20Kota%20Pekanbaru%2C%20Riau%2028289!5e0!3m2!1sid!2sid!4v1715264350123!5m2!1sid!2sid"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -307,13 +369,16 @@
                         Spesialis integrasi teknis dan instalasi terkemuka yang berbasis di Pekanbaru.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
                             <iconify-icon icon="solar:camera-bold"></iconify-icon>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
                             <iconify-icon icon="solar:videocamera-record-bold"></iconify-icon>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
                             <iconify-icon icon="solar:letter-bold"></iconify-icon>
                         </a>
                     </div>
@@ -334,10 +399,13 @@
                 <div>
                     <h4 class="text-white font-black uppercase tracking-widest text-sm mb-6">Layanan</h4>
                     <ul class="space-y-4 text-sm text-slate-400">
-                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Instalasi Elektronika</a></li>
-                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Sistem HVAC (Pendingin)</a></li>
+                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Instalasi
+                                Elektronika</a></li>
+                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Sistem HVAC
+                                (Pendingin)</a></li>
                         <li><a href="service.html" class="hover:text-sky-400 transition-colors">Desain Interior</a></li>
-                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Infrastruktur IT</a></li>
+                        <li><a href="service.html" class="hover:text-sky-400 transition-colors">Infrastruktur IT</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -353,7 +421,8 @@
             </div>
 
             <!-- Bottom -->
-            <div class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-[10px] font-bold uppercase tracking-[0.15em]">
+            <div
+                class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-[10px] font-bold uppercase tracking-[0.15em]">
                 <p>© 2026 PT. Teknokrat Zamrud Integrasi. Didirikan Maret 2023, Pekanbaru. All rights reserved.</p>
                 <div class="flex gap-6">
                     <a href="index.html" class="hover:text-white transition-colors">Beranda</a>
@@ -372,7 +441,7 @@
         const menuClose = document.getElementById('menu-close');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        if(menuOpen && menuClose && mobileMenu) {
+        if (menuOpen && menuClose && mobileMenu) {
             menuOpen.addEventListener('click', () => {
                 mobileMenu.classList.remove('translate-x-full');
                 document.body.style.overflow = 'hidden';
