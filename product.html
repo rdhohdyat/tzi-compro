@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Fira+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         body {
             font-family: 'Fira Sans', sans-serif;
@@ -113,9 +114,9 @@
                 <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <img src="assets/img/logo.png" alt="">
                 </div>
-                <div class="leading-tight">
-                    <p class="text-white text-sm font-bold tracking-wide">PT Teknokrat</p>
-                    <p class="text-sky-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                <div class="leading-tight uppercase">
+                    <p class="text-white text-sm font-bold tracking-wide text-center">Teknokrat</p>
+                    <p class="text-sky-400 text-[11px] font-light tracking-wide">Zamrud Integrasi</p>
                 </div>
             </a>
 
@@ -130,6 +131,13 @@
             </div>
 
             <div class="flex items-center gap-4">
+                <div
+                    class="hidden lg:flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1 mr-2">
+                    <button
+                        class="flex items-center justify-center w-7 h-7 rounded-full bg-sky-600 text-white text-[9px] font-black uppercase">ID</button>
+                    <button
+                        class="flex items-center justify-center w-7 h-7 rounded-full text-slate-400 hover:text-white text-[9px] font-black uppercase transition-all">EN</button>
+                </div>
                 <a href="contact.html"
                     class="btn-transition hidden sm:inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white text-[11px] font-bold uppercase tracking-widest px-5 py-2.5 rounded-lg shadow-lg shadow-sky-900/40">
                     Minta Penawaran
@@ -151,14 +159,22 @@
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center">
                         <img src="assets/img/logo.png" alt="">
                     </div>
-                    <div class="leading-tight">
-                        <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
-                        <p class="text-sky-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                    <div class="leading-tight uppercase">
+                        <p class="text-white text-base font-bold tracking-wide text-center">Teknokrat</p>
+                        <p class="text-sky-400 text-[11px] font-light tracking-wide">Zamrud Integrasi</p>
                     </div>
                 </a>
-                <button id="menu-close" class="text-white text-4xl">
-                    <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
-                </button>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1">
+                        <button
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-sky-600 text-white text-[10px] font-black uppercase">ID</button>
+                        <button
+                            class="flex items-center justify-center w-8 h-8 rounded-full text-slate-400 hover:text-white text-[10px] font-black uppercase transition-all">EN</button>
+                    </div>
+                    <button id="menu-close" class="text-white text-4xl">
+                        <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
+                    </button>
+                </div>
             </div>
 
             <nav class="flex flex-col gap-8 text-2xl font-black uppercase tracking-widest">
@@ -189,7 +205,17 @@
                         </div>
                         <div>
                             <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Telepon</p>
-                            <p class="text-sm font-bold">+62 813-7127-3367</p>
+                            <p class="text-sm font-bold">0813-7127-3367</p>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281371273367" target="_blank" class="flex items-center gap-4 text-white">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400 text-xl">
+                            <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">WhatsApp</p>
+                            <p class="text-sm font-bold">0813-7127-3367</p>
                         </div>
                     </a>
                     <a href="mailto:info@teknozi.com" class="flex items-center gap-4 text-white">
@@ -265,8 +291,8 @@
                         <button
                             class="filter-btn sidebar-item active w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold transition-all text-left"
                             data-filter="all">
-                            <iconify-icon icon="solar:display-linear" class="text-xl"></iconify-icon>
-                            <span>Komputer & Perlengkapan</span>
+                            <iconify-icon icon="solar:widget-bold-duotone" class="text-xl"></iconify-icon>
+                            <span>Semua Produk</span>
                         </button>
                         <button
                             class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left"
@@ -282,15 +308,21 @@
                         </button>
                         <button
                             class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left"
-                            data-filter="atk">
-                            <iconify-icon icon="solar:pen-new-square-linear" class="text-xl"></iconify-icon>
-                            <span>Alat Tulis & Gambar</span>
+                            data-filter="cctv">
+                            <iconify-icon icon="solar:videocamera-record-linear" class="text-xl"></iconify-icon>
+                            <span>CCTV & Keamanan</span>
                         </button>
                         <button
                             class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left"
-                            data-filter="agen">
-                            <iconify-icon icon="solar:hand-money-linear" class="text-xl"></iconify-icon>
-                            <span>Agen / Perdagangan Kontrak</span>
+                            data-filter="ac">
+                            <iconify-icon icon="solar:snowflake-linear" class="text-xl"></iconify-icon>
+                            <span>Air Conditioner (AC)</span>
+                        </button>
+                        <button
+                            class="filter-btn sidebar-item w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-sm font-bold text-slate-500 hover:bg-slate-100 transition-all text-left"
+                            data-filter="stationary">
+                            <iconify-icon icon="solar:pen-new-square-linear" class="text-xl"></iconify-icon>
+                            <span>Stationary</span>
                         </button>
                     </nav>
                 </aside>
@@ -316,7 +348,7 @@
                                 <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
                                     Perdagangan eceran komputer, peralatan, aksesoris dan perlengkapannya.
                                 </p>
-                                <a href="contact.html"
+                                <a href="product-detail.html?id=pc-desktop"
                                     class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
@@ -336,7 +368,7 @@
                                 <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
                                     Radio, Televisi, Video Player, Audio Amplifier, dan Peralatan Stereo.
                                 </p>
-                                <a href="contact.html"
+                                <a href="product-detail.html?id=audio-system"
                                     class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
@@ -356,47 +388,68 @@
                                 <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
                                     Meja & Kursi, Lemari, Rak Buku, Bufet untuk kebutuhan kantor dan komersial.
                                 </p>
-                                <a href="contact.html"
+                                <a href="product-detail.html?id=office-furniture"
                                     class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Product 4 -->
                         <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full"
-                            data-category="atk" data-aos="fade-up">
+                            data-category="stationary" data-aos="fade-up">
                             <div class="relative aspect-[4/3] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=800&auto=format&fit=crop&q=80"
                                     alt="Stationery" class="w-full h-full object-cover">
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <p class="text-sky-500 text-[10px] font-bold mb-2">KBLI 47611</p>
-                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Alat Tulis & Gambar</h3>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Stationary</h3>
                                 <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
-                                    Penyediaan ATK lengkap untuk perkantoran dan institusi pendidikan.
+                                    Penyediaan ATK lengkap untuk perkantoran dan institusi pendidikan dengan kualitas
+                                    terbaik.
                                 </p>
-                                <a href="contact.html"
+                                <a href="product-detail.html?id=stationary"
                                     class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Product 5 -->
+                        <!-- Product 5: CCTV -->
                         <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full"
-                            data-category="it" data-aos="fade-up" data-aos-delay="100">
+                            data-category="cctv" data-aos="fade-up" data-aos-delay="100">
                             <div class="relative aspect-[4/3] overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80"
-                                    alt="Server Infrastructure" class="w-full h-full object-cover">
+                                <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&auto=format&fit=crop&q=80"
+                                    alt="CCTV System" class="w-full h-full object-cover">
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <p class="text-sky-500 text-[10px] font-bold mb-2">KBLI 43213</p>
-                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Infrastruktur IT</h3>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">CCTV & Keamanan</h3>
                                 <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
-                                    Pemasangan instalasi elektronika, jaringan data, dan pusat data terpadu.
+                                    Solusi pengawasan keamanan terpadu dengan teknologi kamera terbaru dan akses remote.
                                 </p>
-                                <a href="contact.html"
+                                <a href="product-detail.html?id=cctv"
+                                    class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 6: AC -->
+                        <div class="product-item product-card bg-white rounded-3xl overflow-hidden flex flex-col h-full"
+                            data-category="ac" data-aos="fade-up" data-aos-delay="200">
+                            <div class="relative aspect-[4/3] overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1631544255130-36691c7849d7?w=800&auto=format&fit=crop&q=80"
+                                    alt="AC System" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-sky-500 text-[10px] font-bold mb-2">KBLI 43224</p>
+                                <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Air Conditioner (AC)</h3>
+                                <p class="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                                    Sistem pendingin udara berkualitas tinggi untuk kenyamanan ruangan hunian dan
+                                    kantor.
+                                </p>
+                                <a href="product-detail.html?id=ac"
                                     class="text-sky-600 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     Lihat Detail <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
@@ -409,6 +462,130 @@
         </div>
     </main>
 
+    <!-- ── PRINCIPALS & PARTNERS ── -->
+    <section class="py-24 bg-white border-t border-slate-100 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto px-6 text-center mb-16 relative z-10">
+            <div
+                class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-sky-600 mb-5">
+                <span class="w-6 h-0.5 bg-sky-600 inline-block"></span>
+                Kolaborasi Global & Strategis
+                <span class="w-6 h-0.5 bg-sky-600 inline-block"></span>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black uppercase text-slate-900" data-aos="fade-up">PRINSIPAL <span
+                    class="text-sky-600">& MITRA KAMI</span></h2>
+            <div class="w-16 h-1 bg-sky-600 mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <style>
+            .principals-slider .swiper-wrapper {
+                transition-timing-function: linear !important;
+            }
+
+            .m-logo {
+                height: 45px;
+                width: auto;
+                max-width: 180px;
+                object-fit: contain;
+                filter: grayscale(100%) brightness(0.6) opacity(0.5);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .swiper-slide:hover .m-logo {
+                filter: grayscale(0%) brightness(1) opacity(1);
+                transform: scale(1.1);
+            }
+
+            @media (max-width: 768px) {
+                .m-logo {
+                    height: 30px;
+                    max-width: 120px;
+                }
+
+                .principals-slider .swiper-slide {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+            }
+
+            .slider-container::before,
+            .slider-container::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 150px;
+                height: 100%;
+                z-index: 10;
+                pointer-events: none;
+            }
+
+            .slider-container::before {
+                left: 0;
+                background: linear-gradient(to right, white, transparent);
+            }
+
+            .slider-container::after {
+                right: 0;
+                background: linear-gradient(to left, white, transparent);
+            }
+        </style>
+
+        <div class="slider-container space-y-10 md:space-y-20">
+            <!-- Row 1: Moving Right -->
+            <div class="swiper principals-slider swiper-left">
+                <div class="swiper-wrapper">
+                    <!-- Original -->
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dell_Logo.svg" alt="Dell" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/ASUS_Logo.svg" alt="ASUS" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo_sky_2016.svg" alt="CISCO" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acer_2011.svg" alt="Acer" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2012.svg" alt="HP" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo_Global_Corporate_Logo.png" alt="Lenovo" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.png" alt="MSI" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fujitsu-Logo.svg" alt="Fujitsu" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28sky%29.svg/3840px-Panasonic_logo_%28sky%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Panasonic" class="m-logo"></div>
+                    <!-- Duplicate for Seamless Loop -->
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dell_Logo.svg" alt="Dell" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/ASUS_Logo.svg" alt="ASUS" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo_sky_2016.svg" alt="CISCO" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acer_2011.svg" alt="Acer" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2012.svg" alt="HP" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo_Global_Corporate_Logo.png" alt="Lenovo" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.png" alt="MSI" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fujitsu-Logo.svg" alt="Fujitsu" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28sky%29.svg/3840px-Panasonic_logo_%28sky%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Panasonic" class="m-logo"></div>
+                </div>
+            </div>
+
+            <!-- Row 2: Moving Left -->
+            <div class="swiper principals-slider swiper-right">
+                <div class="swiper-wrapper">
+                    <!-- Original -->
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/DAIKIN_logo.svg/960px-DAIKIN_logo.svg.png?utm_source=id.wikibooks.org&utm_campaign=index&utm_content=thumbnail" alt="Daikin" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/LG_logo_%282015%29.svg" alt="LG" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_Logo.svg" alt="Samsung" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sharp_logo.svg" alt="Sharp" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toshiba_logo.svg" alt="Toshiba" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/3840px-Logo_of_the_Carrier_Corporation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Carrier" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi_logo.svg" alt="Mitsubishi" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg" alt="Sony" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sennheiser-logo-new.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Sennheiser" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg" alt="Apple" class="m-logo"></div>
+                    <!-- Duplicate for Seamless Loop -->
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/DAIKIN_logo.svg/960px-DAIKIN_logo.svg.png?utm_source=id.wikibooks.org&utm_campaign=index&utm_content=thumbnail" alt="Daikin" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/LG_logo_%282015%29.svg" alt="LG" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_Logo.svg" alt="Samsung" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sharp_logo.svg" alt="Sharp" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toshiba_logo.svg" alt="Toshiba" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/3840px-Logo_of_the_Carrier_Corporation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Carrier" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi_logo.svg" alt="Mitsubishi" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg" alt="Sony" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sennheiser-logo-new.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Sennheiser" class="m-logo"></div>
+                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg" alt="Apple" class="m-logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ── FOOTER ── -->
     <footer class="bg-[#0a1628] pt-20 pb-10 border-t border-sky-900/20">
         <div class="max-w-6xl mx-auto px-6">
@@ -419,9 +596,9 @@
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
                             <img src="assets/img/logo.png" alt="">
                         </div>
-                        <div class="leading-tight">
-                            <p class="text-white text-base font-bold tracking-wide uppercase">Teknokrat</p>
-                            <p class="text-sky-400 text-xs font-light tracking-wide">Zamrud Integrasi</p>
+                        <div class="leading-tight uppercase">
+                            <p class="text-white text-base font-bold tracking-wide text-center">Teknokrat</p>
+                            <p class="text-sky-400 text-[11px] font-light tracking-wide">Zamrud Integrasi</p>
                         </div>
                     </a>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">
@@ -469,8 +646,39 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         AOS.init({ duration: 900, once: true, offset: 80 });
+
+        // Principals Slider
+        document.addEventListener('DOMContentLoaded', function () {
+            const commonOptions = {
+                spaceBetween: 0,
+                centeredSlides: true,
+                speed: 6000,
+                loop: true,
+                loopedSlides: 20, // Added for seamless loop
+                slidesPerView: 'auto',
+                allowTouchMove: false,
+            };
+
+            new Swiper('.swiper-left', {
+                ...commonOptions,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: true,
+                },
+            });
+
+            new Swiper('.swiper-right', {
+                ...commonOptions,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+            });
+        });
 
         // Search & Filter Logic
         const searchInput = document.getElementById('product-search');
