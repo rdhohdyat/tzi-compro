@@ -462,7 +462,7 @@
         </div>
     </main>
 
-    <!-- ── PRINCIPALS & PARTNERS ── -->
+       <!-- ── PRINCIPALS & PARTNERS ── -->
     <section class="py-24 bg-white border-t border-slate-100 overflow-hidden relative">
         <div class="max-w-6xl mx-auto px-6 text-center mb-16 relative z-10">
             <div
@@ -495,15 +495,14 @@
                 transform: scale(1.1);
             }
 
+            .swiper-wrapper {
+                transition-timing-function: linear !important;
+            }
+
             @media (max-width: 768px) {
                 .m-logo {
                     height: 30px;
                     max-width: 120px;
-                }
-
-                .principals-slider .swiper-slide {
-                    padding-left: 1rem !important;
-                    padding-right: 1rem !important;
                 }
             }
 
@@ -529,60 +528,184 @@
             }
         </style>
 
-        <div class="slider-container space-y-10 md:space-y-20">
-            <!-- Row 1: Moving Right -->
-            <div class="swiper principals-slider swiper-left">
-                <div class="swiper-wrapper">
-                    <!-- Original -->
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dell_Logo.svg" alt="Dell" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/ASUS_Logo.svg" alt="ASUS" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo_sky_2016.svg" alt="CISCO" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acer_2011.svg" alt="Acer" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2012.svg" alt="HP" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo_Global_Corporate_Logo.png" alt="Lenovo" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.png" alt="MSI" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fujitsu-Logo.svg" alt="Fujitsu" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28sky%29.svg/3840px-Panasonic_logo_%28sky%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Panasonic" class="m-logo"></div>
-                    <!-- Duplicate for Seamless Loop -->
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dell_Logo.svg" alt="Dell" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/ASUS_Logo.svg" alt="ASUS" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cisco_logo_sky_2016.svg" alt="CISCO" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acer_2011.svg" alt="Acer" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2012.svg" alt="HP" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo_Global_Corporate_Logo.png" alt="Lenovo" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.png" alt="MSI" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fujitsu-Logo.svg" alt="Fujitsu" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28sky%29.svg/3840px-Panasonic_logo_%28sky%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Panasonic" class="m-logo"></div>
+        <div class="slider-container space-y-12 md:space-y-16">
+            <!-- Division 1: Air Conditioning (Moving Right) -->
+            <div class="space-y-4">
+                <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-500/60 text-center px-6">Air
+                    Conditioning Division</p>
+                <div class="swiper swiper-left">
+                    <div class="swiper-wrapper">
+                        <!-- Original -->
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/daikin.jpg" alt="Daikin"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/mitsubishi.svg"
+                                alt="Mitsubishi" class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/panasonic.png"
+                                alt="Panasonic" class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/samsung.png" alt="Samsung"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/LG.svg" alt="LG"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/carrier.png" alt="Carrier"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/midea.png" alt="Midea"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/haier.png" alt="Haier"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/hisense.png" alt="Hisense"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/gree.png" alt="Gree"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/york.png" alt="York"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <!-- Duplicate -->
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/daikin.jpg" alt="Daikin"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/mitsubishi.svg"
+                                alt="Mitsubishi" class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/panasonic.png"
+                                alt="Panasonic" class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/samsung.png" alt="Samsung"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/LG.svg" alt="LG"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/carrier.png" alt="Carrier"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/midea.png" alt="Midea"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/haier.png" alt="Haier"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/hisense.png" alt="Hisense"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/gree.png" alt="Gree"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/york.png" alt="York"
+                                class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Row 2: Moving Left -->
-            <div class="swiper principals-slider swiper-right">
-                <div class="swiper-wrapper">
-                    <!-- Original -->
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/DAIKIN_logo.svg/960px-DAIKIN_logo.svg.png?utm_source=id.wikibooks.org&utm_campaign=index&utm_content=thumbnail" alt="Daikin" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/LG_logo_%282015%29.svg" alt="LG" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_Logo.svg" alt="Samsung" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sharp_logo.svg" alt="Sharp" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toshiba_logo.svg" alt="Toshiba" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/3840px-Logo_of_the_Carrier_Corporation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Carrier" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi_logo.svg" alt="Mitsubishi" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg" alt="Sony" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sennheiser-logo-new.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Sennheiser" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg" alt="Apple" class="m-logo"></div>
-                    <!-- Duplicate for Seamless Loop -->
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/DAIKIN_logo.svg/960px-DAIKIN_logo.svg.png?utm_source=id.wikibooks.org&utm_campaign=index&utm_content=thumbnail" alt="Daikin" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/LG_logo_%282015%29.svg" alt="LG" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_Logo.svg" alt="Samsung" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sharp_logo.svg" alt="Sharp" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toshiba_logo.svg" alt="Toshiba" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/3840px-Logo_of_the_Carrier_Corporation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Carrier" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi_logo.svg" alt="Mitsubishi" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg" alt="Sony" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sennheiser-logo-new.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Sennheiser" class="m-logo"></div>
-                    <div class="swiper-slide !w-auto px-10"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg" alt="Apple" class="m-logo"></div>
+            <!-- Division 2: IT - Electronic (Moving Left) -->
+            <div class="space-y-4">
+                <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-500/60 text-center px-6">IT -
+                    Electronic Division</p>
+                <div class="swiper swiper-right">
+                    <div class="swiper-wrapper">
+                        <!-- Original -->
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/asus.png" alt="Asus"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/acer.png" alt="Acer"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/apple.png" alt="Apple"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/dell.png" alt="Dell"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/hp.png" alt="HP"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/lenovo.png" alt="Lenovo"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/msi.png" alt="MSI"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/cisco.png" alt="Cisco"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/epson.png" alt="Epson"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/bosch.png" alt="Bosch"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/brother.png" alt="Brother"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/benq.png" alt="BenQ"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/philips.png" alt="Philips"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <!-- Duplicate -->
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/asus.png" alt="Asus"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/acer.png" alt="Acer"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/apple.png" alt="Apple"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/dell.png" alt="Dell"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/hp.png" alt="HP"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/lenovo.png" alt="Lenovo"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/msi.png" alt="MSI"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/cisco.png" alt="Cisco"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/epson.png" alt="Epson"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/bosch.png" alt="Bosch"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/brother.png" alt="Brother"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/benq.png" alt="BenQ"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/philips.png" alt="Philips"
+                                class="m-logo h-10 grayscale hover:grayscale-0 transition-all"></div>
+                        alt="Philips" class="m-logo h-10 grayscale hover:grayscale-0 transition-all">
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Division 3: Furniture (Moving Right) -->
+        <div class="space-y-4">
+            <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-500/60 text-center px-6">Furniture
+                Division</p>
+            <div class="swiper swiper-left">
+                <div class="swiper-wrapper">
+                    <!-- Original -->
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/futura.jpg" alt="Futura"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/chitose.webp" alt="Chitose"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/lion.png" alt="Lion"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/indachi.png" alt="Indachi"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/donati.webp" alt="Donati"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/chairman.webp" alt="Chairman"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/savello.webp" alt="Savello"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/importa.png" alt="Importa"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/expo.png" alt="Expo"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/orbitrend.webp" alt="Orbitrend"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/vip.png" alt="VIP"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <!-- Duplicate -->
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/futura.jpg" alt="Futura"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/chitose.webp" alt="Chitose"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/lion.png" alt="Lion"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/indachi.png" alt="Indachi"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/donati.webp" alt="Donati"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/chairman.webp" alt="Chairman"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/savello.webp" alt="Savello"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/importa.png" alt="Importa"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/expo.png" alt="Expo"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/orbitrend.webp" alt="Orbitrend"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                    <div class="swiper-slide !w-auto px-8"><img src="assets/img/brands/vip.png" alt="VIP"
+                            class="m-logo h-12 grayscale hover:grayscale-0 transition-all"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
