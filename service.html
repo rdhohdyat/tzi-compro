@@ -7,7 +7,7 @@
     <title>Layanan - PT Teknokrat Zamrud Integrasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <link rel="icon" type="image/png" href="assets/img/logo-favicon.png" />
+    <link rel="icon" type="image/png" href="assets/img/logo-dark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +28,7 @@
 
         .hero-bg {
             position: relative;
-            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&auto=format&fit=crop&q=80');
+            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('assets/img/service-hero.png');
             background-size: cover;
             background-position: center;
         }
@@ -114,7 +114,6 @@
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
-
     <!-- ── NAVBAR ── -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a1628]/95 backdrop-blur-md border-b border-sky-900/40">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -241,7 +240,7 @@
         <div class="max-w-6xl mx-auto px-6 w-full py-20 relative z-10 text-center md:text-left">
             <div data-aos="fade-up">
                 <div class="flex items-center justify-center md:justify-start gap-3 text-sky-400 mb-4">
-                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shadow-[0_0_8px_rgba(14,165,233,0.8)]"></span>
                     <p class="text-[11px] font-bold uppercase tracking-[0.2em]">Our Services</p>
                 </div>
                 <h1 class="text-4xl md:text-7xl uppercase text-white leading-tight font-black">
@@ -265,216 +264,298 @@
         </div>
     </section>
 
-    <!-- ── 3 LAYANAN JASA UTAMA ── -->
+    <!-- ── AC DIVISION ── -->
+    <section id="ac-division" class="py-32 md:py-48 bg-white overflow-hidden relative">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-sky-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center mb-20">
+                <div class="w-full lg:w-1/2" data-aos="fade-right">
+                    <div class="flex items-center gap-3 text-sky-600 mb-6">
+                        <span class="w-12 h-0.5 bg-sky-600"></span>
+                        <p class="text-[11px] font-bold uppercase tracking-[0.25em]">Division 01</p>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black uppercase text-slate-900 leading-[1.1] mb-8">
+                        AIR <br> <span class="text-sky-600">CONDITIONING</span> <br> DIVISION
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Solusi pendingin udara terintegrasi untuk kebutuhan komersial, institusi, hospitality, healthcare, dan residential.
+                    </p>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        PT Teknokrat Zamrud Integrasi menyediakan solusi air conditioning yang mencakup pengadaan unit, instalasi profesional, preventive maintenance, hingga dukungan teknis untuk berbagai skala kebutuhan.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
+                    <div class="rounded-2xl overflow-hidden  relative z-10">
+                        <img src="assets/img/layanan/ac/ac_service.png" alt="AC Division" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-sky-600/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Sub Service Cards -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:box-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Supply AC Units</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Pengadaan unit AC berkualitas dari berbagai brand terkemuka.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:settings-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Installation & Commissioning</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Instalasi profesional sesuai standar untuk performa optimal dan efisien.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:calendar-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Preventive Maintenance</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Perawatan berkala untuk menjaga keandalan dan umur peralatan lebih lama.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:wrench-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Repair & Troubleshooting</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Perbaikan cepat dan tepat untuk berbagai masalah pada sistem AC.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:shield-star-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">HVAC Project Support</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Dukungan teknis dan manajemen proyek untuk kebutuhan skala besar.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:buildings-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Commercial Cooling Solutions</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Solusi pendinginan terintegrasi untuk berbagai sektor komersial.</p>
+                </div>
+            </div>
+
+            <!-- Brand Partners AC -->
+            <div class="pt-12 border-t border-slate-100">
+                <p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-10">Brand Partners</p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="assets/img/brands/daikin.jpg" alt="Daikin" class="h-6 md:h-8 w-auto object-contain">
+                    <img src="assets/img/brands/mitsubishi.svg" alt="Mitsubishi" class="h-6 md:h-8 w-auto object-contain">
+                    <img src="assets/img/brands/panasonic.png" alt="Panasonic" class="h-6 md:h-8 w-auto object-contain">
+                    <img src="assets/img/brands/gree.png" alt="Gree" class="h-6 md:h-8 w-auto object-contain">
+                    <img src="assets/img/brands/carrier.png" alt="Carrier" class="h-6 md:h-8 w-auto object-contain">
+                    <img src="assets/img/brands/york.png" alt="York" class="h-6 md:h-12 w-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── IT & ELECTRONIC DIVISION ── -->
+    <section id="it-division" class="py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row-reverse gap-16 items-center mb-20">
+                <div class="w-full lg:w-1/2" data-aos="fade-left">
+                    <div class="flex items-center gap-3 text-sky-600 mb-6">
+                        <span class="w-12 h-0.5 bg-sky-600"></span>
+                        <p class="text-[11px] font-bold uppercase tracking-[0.25em]">Division 02</p>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black uppercase text-slate-900 leading-tight mb-8">
+                        IT & <br> <span class="text-sky-600">ELECTRONIC</span> <br> DIVISION
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Solusi teknologi informasi dan elektronik terintegrasi untuk mendukung produktivitas, keamanan, dan efisiensi operasional Anda.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200">
+                            <iconify-icon icon="solar:monitor-bold-duotone" class="text-sky-600 text-xl"></iconify-icon>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Produk Berkualitas</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200">
+                            <iconify-icon icon="solar:shield-up-bold-duotone" class="text-sky-600 text-xl"></iconify-icon>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Teknologi Terkini</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
+                    <div class="rounded-2xl overflow-hidden  relative z-10">
+                        <img src="assets/img/layanan/elektronik/elektronik-service.png" alt="IT Division" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-8 -left-8 w-64 h-64 bg-sky-600/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Sub Service Cards -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:laptop-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Computer & Peripheral</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Pengadaan perangkat komputer, laptop, printer, dan peripheral berkualitas dari brand ternama.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:server-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Server & Storage</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Solusi server, storage, dan sistem jaringan untuk kinerja dan keamanan data yang optimal.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:videocamera-record-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Security & Surveillance</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Sistem keamanan CCTV dan akses kontrol untuk perlindungan area dan aset Anda.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:globus-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Network Solution</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Infrastruktur jaringan yang stabil, cepat, dan terintegrasi untuk kebutuhan bisnis.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:play-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Audio Visual & Multimedia</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Solusi audio visual, display, LED, dan multimedia untuk komunikasi yang lebih efektif.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:cpu-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Electronic Solution</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Berbagai perangkat elektronik pendukung untuk kebutuhan institusi, komersial, dan industri.</p>
+                </div>
+            </div>
+
+            <!-- Brand Partners IT -->
+            <div class="pt-12 border-t border-slate-200">
+                <p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-10">Brand Partners</p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="assets/img/brands/hp.png" alt="HP" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/dell.png" alt="Dell" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/lenovo.png" alt="Lenovo" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/asus.png" alt="Asus" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/hikvision.png" alt="Hikvision" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/cisco.png" alt="Cisco" class="h-5 md:h-6 w-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FURNITURE DIVISION ── -->
+    <section id="furniture-division" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center mb-20">
+                <div class="w-full lg:w-1/2" data-aos="fade-right">
+                    <div class="flex items-center gap-3 text-sky-600 mb-6">
+                        <span class="w-12 h-0.5 bg-sky-600"></span>
+                        <p class="text-[11px] font-bold uppercase tracking-[0.25em]">Division 03</p>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black uppercase text-slate-900 leading-tight mb-8">
+                        FURNITURE <br> <span class="text-sky-600">DIVISION</span>
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Solusi furniture modern untuk kebutuhan kantor, institusi pendidikan, hospitality, fasilitas publik, dan ruang komersial.
+                    </p>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        PT Teknokrat Zamrud Integrasi menghadirkan solusi furniture berkualitas untuk menciptakan ruang kerja dan lingkungan institusional yang nyaman, fungsional, dan profesional.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
+                    <div class="rounded-2xl overflow-hidden  relative z-10">
+                        <img src="assets/img/layanan/furniture/furniture.png" alt="Furniture Division" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-sky-600/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Sub Service Cards -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:chair-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Office Furniture Solutions</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Penyediaan meja, kursi, dan sistem penyimpanan kantor yang ergonomis.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:square-academic-cap-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Educational Furniture</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Furniture khusus untuk ruang kelas, perpustakaan, dan fasilitas pendidikan.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:bed-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Hospitality Furniture</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Solusi furniture untuk hotel, lobby, dan area publik yang estetis dan tahan lama.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:users-group-two-rounded-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Public Area Seating</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Sistem tempat duduk untuk fasilitas publik, bandara, dan area tunggu.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:layers-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Workspace Setup & Layout</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Dukungan teknis untuk pengaturan ruang dan tata letak furniture yang efisien.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-sky-400 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-sky-600 shadow-sm mb-6 group-hover:bg-sky-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:home-2-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-black uppercase text-slate-900 mb-3">Commercial Interior Furnishing</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Solusi interior lengkap untuk berbagai kebutuhan ruang komersial modern.</p>
+                </div>
+            </div>
+
+            <!-- Brand Partners Furniture -->
+            <div class="pt-12 border-t border-slate-100">
+                <p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-10">Brand Partners</p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="assets/img/brands/futura.jpg" alt="Futura" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/chitose.webp" alt="Chitose" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/lion.png" alt="Lion" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/indachi.png" alt="Indachi" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/donati.webp" alt="Donati" class="h-5 md:h-6 w-auto object-contain">
+                    <img src="assets/img/brands/chairman.webp" alt="Chairman" class="h-5 md:h-6 w-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STATS SECTION ── -->
     <section class="py-24 bg-white relative">
         <div class="max-w-6xl mx-auto px-6">
-            <!-- Header Section -->
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10 mb-20" data-aos="fade-up">
-                <div class="max-w-lg text-center md:text-left">
-                    <div
-                        class="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-sky-600 mb-4 bg-sky-50 px-3 py-1 rounded-full">
-                        <iconify-icon icon="solar:shield-star-bold-duotone"></iconify-icon>
-                        KBLI Terakreditasi
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-black uppercase text-slate-900 mb-6 leading-tight">3 LAYANAN
-                        <span class="text-sky-600">JASA UTAMA</span>
-                    </h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">Kami memberikan pelayanan terbaik berdasarkan
-                        standar KBLI yang terdaftar secara resmi untuk menjamin kualitas dan keamanan instalasi.</p>
-                </div>
-                <div class="grid grid-cols-2 gap-4 w-full md:w-auto">
-                    <div
-                        class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
-                        <iconify-icon icon="solar:verified-check-bold-duotone"
-                            class="text-sky-600 text-3xl mb-2"></iconify-icon>
-                        <span
-                            class="text-[9px] font-black uppercase tracking-widest text-slate-900 leading-tight">Sertifikasi
-                            <br> Resmi</span>
-                    </div>
-                    <div
-                        class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
-                        <iconify-icon icon="solar:clipboard-list-bold-duotone"
-                            class="text-sky-600 text-3xl mb-2"></iconify-icon>
-                        <span class="text-[9px] font-black uppercase tracking-widest text-slate-900 leading-tight">KBLI
-                            <br> Terdaftar</span>
-                    </div>
-                    <div
-                        class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
-                        <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"
-                            class="text-sky-600 text-3xl mb-2"></iconify-icon>
-                        <span
-                            class="text-[9px] font-black uppercase tracking-widest text-slate-900 leading-tight">Integrasi
-                            <br> Penuh</span>
-                    </div>
-                    <div
-                        class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
-                        <iconify-icon icon="solar:widget-3-bold-duotone"
-                            class="text-sky-600 text-3xl mb-2"></iconify-icon>
-                        <span
-                            class="text-[9px] font-black uppercase tracking-widest text-slate-900 leading-tight">Ekosistem
-                            <br> Terpadu</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Cards Grid -->
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1: Elektronika -->
-                <div class="service-card p-10 bg-slate-50 rounded-lg md:rounded-[2.5rem] border border-slate-100 relative overflow-hidden group"
-                    data-aos="fade-up" data-aos-delay="0">
-                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <iconify-icon icon="solar:cpu-bolt-bold-duotone" class="text-8xl text-[#0a1628]"></iconify-icon>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="w-16 h-16 bg-[#0a1628] rounded-2xl flex items-center justify-center mb-8 shadow-xl">
-                            <iconify-icon icon="solar:videocamera-record-bold-duotone"
-                                class="text-white text-3xl"></iconify-icon>
-                        </div>
-                        <div class="mb-4">
-                            <span
-                                class="text-[10px] font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-2 py-0.5 rounded">KBLI
-                                43213</span>
-                        </div>
-                        <h3 class="text-2xl font-black uppercase text-slate-900 mb-6 leading-tight">Instalasi
-                            <br>Elektronika
-                        </h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Pemasangan instalasi elektronika pada
-                            bangunan gedung hunian maupun non-hunian.</p>
-                        <ul class="space-y-4">
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                CCTV & Alarm System
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Sound System Management
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Access Control & Scoring
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Fasilitas Telekomunikasi
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 2: Pendingin -->
-                <div class="service-card p-10 bg-slate-50 rounded-lg md:rounded-[2.5rem] border border-slate-100 relative overflow-hidden group"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <iconify-icon icon="solar:wind-bold-duotone" class="text-8xl text-[#0a1628]"></iconify-icon>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="w-16 h-16 bg-[#0a1628] rounded-2xl flex items-center justify-center mb-8 shadow-xl">
-                            <iconify-icon icon="solar:snowflake-bold-duotone"
-                                class="text-white text-3xl"></iconify-icon>
-                        </div>
-                        <div class="mb-4">
-                            <span
-                                class="text-[10px] font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-2 py-0.5 rounded">KBLI
-                                43224</span>
-                        </div>
-                        <h3 class="text-2xl font-black uppercase text-slate-900 mb-6 leading-tight">Pendingin &
-                            <br>Ventilasi
-                        </h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Pemasangan dan perawatan sistem pendingin
-                            udara untuk bangunan hunian & non-hunian.</p>
-                        <ul class="space-y-4">
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Air Conditioner (AC)
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Lemari Pendingin
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Ventilasi Udara
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Pipa, Ducting & Logam
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 3: Furniture & Mebel -->
-                <div class="service-card p-10 bg-slate-50 rounded-lg md:rounded-[2.5rem] border border-slate-100 relative overflow-hidden group"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <iconify-icon icon="solar:armchair-bold-duotone" class="text-8xl text-[#0a1628]"></iconify-icon>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="w-16 h-16 bg-[#0a1628] rounded-2xl flex items-center justify-center mb-8 shadow-xl">
-                            <iconify-icon icon="solar:chair-bold-duotone"
-                                class="text-white text-3xl"></iconify-icon>
-                        </div>
-                        <div class="mb-4">
-                            <span
-                                class="text-[10px] font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-2 py-0.5 rounded">KBLI
-                                47591</span>
-                        </div>
-                        <h3 class="text-2xl font-black uppercase text-slate-900 mb-6 leading-tight">Furniture
-                            <br>& Mebel
-                        </h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Penyedia solusi mebel perkantoran dan institusi dengan brand ternama seperti Futura, CHITOSE, dan Lion.</p>
-                        <ul class="space-y-4">
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Office Furniture (Lion)
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Kursi Lipat & Tumpuk (Futura)
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Meja & Kursi Kerja (CHITOSE)
-                            </li>
-                            <li
-                                class="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
-                                <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-                                Filing Cabinet & Brankas
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Stats Section -->
-            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 bg-[#0a1628] p-12 rounded-lg md:rounded-[3rem] text-center"
-                data-aos="zoom-in">
-                <div class="space-y-2 border-r border-white/10 md:border-r">
-                    <p class="text-4xl font-black text-sky-400">99.9%</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 bg-[#0a1628] p-12 rounded-[2.5rem] md:rounded-[4rem] text-center shadow-2xl shadow-sky-900/20" data-aos="zoom-in">
+                <div class="space-y-2 md:border-r border-white/10 last:border-none">
+                    <p class="text-4xl md:text-5xl font-black text-sky-400">99.9%</p>
                     <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Uptime Layanan</p>
                 </div>
-                <div class="space-y-2 border-r border-white/10 md:border-r">
-                    <p class="text-4xl font-black text-sky-400">50+</p>
+                <div class="space-y-2 md:border-r border-white/10 last:border-none">
+                    <p class="text-4xl md:text-5xl font-black text-sky-400">50+</p>
                     <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Teknisi Ahli</p>
                 </div>
-                <div class="space-y-2 border-r border-white/10 md:border-none">
-                    <p class="text-4xl font-black text-sky-400">100%</p>
+                <div class="space-y-2 md:border-r border-white/10 last:border-none">
+                    <p class="text-4xl md:text-5xl font-black text-sky-400">100%</p>
                     <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">KBLI Terdaftar</p>
                 </div>
-                <div class="space-y-2">
-                    <p class="text-4xl font-black text-sky-400">24/7</p>
+                <div class="space-y-2 last:border-none">
+                    <p class="text-4xl md:text-5xl font-black text-sky-400">24/7</p>
                     <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Dukungan Teknis</p>
                 </div>
             </div>
@@ -483,10 +564,6 @@
 
     <!-- ── OUR CLIENTS ── -->
     <section class="py-24 bg-white relative overflow-hidden border-t border-slate-100">
-        <!-- Background Decoration -->
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>
-
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20" data-aos="fade-up">
                 <div class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-sky-600 mb-4">
