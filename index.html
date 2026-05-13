@@ -1159,6 +1159,61 @@
         </div>
     </section>
 
+    <!-- ── OUR CLIENTS ── -->
+    <section class="py-24 bg-slate-50 relative overflow-hidden border-t border-slate-200/60">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-100/50 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-sky-600 mb-4">
+                    <span class="w-8 h-px bg-sky-600"></span>
+                    Trust & Collaboration
+                    <span class="w-8 h-px bg-sky-600"></span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black uppercase text-slate-900 leading-tight">
+                    KEPERCAYAAN <span class="text-sky-600">KLIEN KAMI</span>
+                </h2>
+                <p class="text-slate-500 text-sm md:text-base max-w-2xl mx-auto mt-4">
+                    Kami bangga telah dipercaya oleh berbagai institusi terkemuka di sektor pendidikan, pemerintahan, dan hospitality untuk menghadirkan solusi teknologi terbaik.
+                </p>
+            </div>
+
+            <!-- Tabs Header -->
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-6 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button class="client-tab-btn active flex items-center gap-3 px-6 py-3.5 rounded-2xl border-2 border-sky-600 bg-sky-600 text-white font-bold text-sm transition-all shadow-xl shadow-sky-900/20 hover:-translate-y-1" data-target="edu">
+                    <iconify-icon icon="solar:globus-bold-duotone" class="text-xl"></iconify-icon>
+                    Pendidikan
+                </button>
+                <button class="client-tab-btn flex items-center gap-3 px-6 py-3.5 rounded-2xl border-2 border-slate-200 bg-white text-slate-500 font-bold text-sm transition-all hover:bg-slate-50 hover:text-sky-600 hover:border-sky-300 shadow-sm hover:-translate-y-1" data-target="gov">
+                    <iconify-icon icon="solar:case-minimalistic-bold-duotone" class="text-xl"></iconify-icon>
+                    Pemerintahan
+                </button>
+                <button class="client-tab-btn flex items-center gap-3 px-6 py-3.5 rounded-2xl border-2 border-slate-200 bg-white text-slate-500 font-bold text-sm transition-all hover:bg-slate-50 hover:text-sky-600 hover:border-sky-300 shadow-sm hover:-translate-y-1" data-target="hosp">
+                    <iconify-icon icon="solar:bed-bold-duotone" class="text-xl"></iconify-icon>
+                    Hospitality
+                </button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="relative min-h-[300px]">
+                <!-- Pendidikan -->
+                <div id="tab-edu" class="client-tab-content transition-all duration-500 opacity-100 translate-y-0" data-aos="fade-up" data-aos-delay="200">
+                    <div id="edu-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6"></div>
+                </div>
+                <!-- Pemerintahan -->
+                <div id="tab-gov" class="client-tab-content hidden transition-all duration-500 opacity-0 translate-y-4">
+                    <div id="gov-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6"></div>
+                </div>
+                <!-- Hospitality -->
+                <div id="tab-hosp" class="client-tab-content hidden transition-all duration-500 opacity-0 translate-y-4">
+                    <div id="hosp-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ── CTA / KONTAK ── -->
     <section id="kontak" class="py-28 bg-[#0a1628] relative"
         style="background-image: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(37,99,235,0.15) 0%, transparent 70%);">
@@ -1322,6 +1377,123 @@
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     },
+                });
+            });
+        });
+
+        // Client Logos Data
+        const eduClients = [
+            { name:"Politeknik Negeri Bengkalis", abbr:"PNB", url:"assets/img/clients/pnb.png" },
+            { name:"Politeknik Caltex Riau", abbr:"PCR", url:"assets/img/clients/pcr.png" },
+            { name:"Universitas Riau", abbr:"UNRI", url:"assets/img/clients/unri.png" },
+            { name:"Universitas Islam Riau", abbr:"UIR", url:"assets/img/clients/uir.png" },
+            { name:"UIN Sultan Syarif Kasim", abbr:"UIN", url:"assets/img/clients/uin.png" },
+            { name:"Universitas Andalas", abbr:"UNAND", url:"assets/img/clients/unand.png" },
+            { name:"Universitas Negeri Padang", abbr:"UNP", url:"assets/img/clients/unp.png" },
+            { name:"UNISI Kuantan Singingi", abbr:"UNISI", url:"assets/img/clients/unisi.png" },
+            { name:"Univ. Maritim Raja Ali Haji", abbr:"UMRAH", url:"assets/img/clients/umrah.png" },
+            { name:"IAIN Sultan Abdurrahman", abbr:"IAIN", url:"assets/img/clients/iain.webp" },
+            { name:"Universitas Lancang Kuning", abbr:"UNILAK", url:"assets/img/clients/unilak.png" },
+            { name:"Universitas AwalBros", abbr:"UAB", url:"assets/img/clients/uab.png" },
+        ];
+
+        const govClients = [
+            { name:"Kementrian Pendidikan Tinggi", abbr:"DIKTI", url:"assets/img/clients/dikti.png" },
+            { name:"Kementrian Agama", abbr:"KEMENAG", url:"assets/img/clients/kemenag.png" },
+            { name:"Kejaksaan Agung", abbr:"KEJAGUNG", url:"assets/img/clients/kejagung.png" },
+            { name:"Kejaksaan Tinggi Riau", abbr:"KEJATI", url:"assets/img/clients/kejatiri.png" },
+            { name:"Pengadilan Tinggi Kepri", abbr:"PT KEPRI", url:"assets/img/clients/ptkepri.png" },
+            { name:"PTA Pekanbaru", abbr:"PTA PKU", url:"assets/img/clients/ptapku.png" },
+            { name:"PTA Kepulauan Riau", abbr:"PTA KEPRI", url:"assets/img/clients/ptakepri.png" },
+            { name:"Dinas PU Provinsi Riau", abbr:"PUPR RIAU", url:"assets/img/clients/pupr.png" },
+            { name:"Dinas PU Kepri", abbr:"PU KEPRI", url:"assets/img/clients/pukepri.png" },
+            { name:"Ditjen Pajak", abbr:"DJP", url:"assets/img/clients/djp.svg" },
+            { name:"Kementrian Perhubungan", abbr:"KEMENHUB", url:"assets/img/clients/kemenhub.png" },
+            { name:"Kementrian BKKBN", abbr:"BKKBN", url:"assets/img/clients/bkkbn.png" },
+            { name:"BVP & Produktivitas", abbr:"BVP", url:"assets/img/clients/bvp.webp" },
+            { name:"Kementrian Kesehatan", abbr:"KEMENKES", url:"assets/img/clients/kemenkes.png" },
+            { name:"Angkasa Pura", abbr:"AP", url:"assets/img/clients/angkasapura.png" },
+            { name:"Agrinas Palm Nusantara", abbr:"AGRINAS", url:"assets/img/clients/agrinas.png" },
+            { name:"Telkomsel", abbr:"TSEL", url:"assets/img/clients/telkomsel.png" },
+        ];
+
+        const hospClients = [
+            { name:"Cititel Group", abbr:"CITITEL", url:"assets/img/clients/cititel.webp" },
+            { name:"Hotel New Hollywood", abbr:"NEW HWD", url:"assets/img/clients/newhwd.jpg" },
+            { name:"Swissbell in Hotel", abbr:"SWISSBELL", url:"assets/img/clients/swissbell.png" },
+            { name:"Prime Park Hotel", abbr:"PRIME PARK", url:"assets/img/clients/primepark.png" },
+            { name:"Archipelago Hotel Group", abbr:"ARCHIPELAGO", url:"assets/img/clients/archipelago.jpg" },
+            { name:"RS AwalBros", abbr:"AWALBROS", url:"assets/img/clients/awalbros.png" },
+            { name:"RSIA Andini", abbr:"ANDINI", url:"assets/img/clients/rsia.png" },
+            { name:"Aulia Hospital", abbr:"AULIA", url:"assets/img/clients/auliahospital.png" },
+            { name:"RS Prima", abbr:"RS PRIMA", url:"assets/img/clients/rsprima.png" },
+        ];
+
+        function renderClientGrid(data, containerId) {
+            const grid = document.getElementById(containerId);
+            if (!grid) return;
+            data.forEach(item => {
+                const wrap = document.createElement('div');
+                wrap.className = 'group flex flex-col items-center justify-between gap-4 p-5 rounded-3xl border border-slate-200/60 bg-white hover:border-sky-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all duration-500 hover:-translate-y-1 h-full';
+                wrap.title = item.name;
+
+                const box = document.createElement('div');
+                box.className = 'w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center p-2 transition-transform duration-500 group-hover:scale-110';
+
+                if (item.url) {
+                    const img = document.createElement('img');
+                    img.src = item.url;
+                    img.alt = item.name;
+                    img.loading = 'lazy';
+                    img.className = 'max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 opacity-70 group-hover:opacity-100';
+                    img.onerror = function() {
+                        box.innerHTML = `<span class="text-sm font-black text-slate-400 text-center leading-tight">${item.abbr}</span>`;
+                    };
+                    box.appendChild(img);
+                } else {
+                    box.innerHTML = `<span class="text-sm font-black text-slate-400 text-center leading-tight">${item.abbr}</span>`;
+                }
+
+                const label = document.createElement('span');
+                label.className = 'text-[11px] font-bold text-slate-500 text-center leading-tight group-hover:text-sky-600 transition-colors line-clamp-2 mt-auto';
+                label.textContent = item.name;
+
+                wrap.appendChild(box);
+                wrap.appendChild(label);
+                grid.appendChild(wrap);
+            });
+        }
+
+        renderClientGrid(eduClients, 'edu-grid');
+        renderClientGrid(govClients, 'gov-grid');
+        renderClientGrid(hospClients, 'hosp-grid');
+
+        // Client Tabs Logic
+        const clientTabs = document.querySelectorAll('.client-tab-btn');
+        const clientContents = document.querySelectorAll('.client-tab-content');
+
+        clientTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                clientTabs.forEach(t => {
+                    t.classList.remove('border-sky-600', 'bg-sky-600', 'text-white', 'shadow-xl', 'shadow-sky-900/20', 'active');
+                    t.classList.add('border-slate-200', 'bg-white', 'text-slate-500', 'shadow-sm', 'hover:bg-slate-50', 'hover:text-sky-600', 'hover:border-sky-300');
+                });
+                tab.classList.remove('border-slate-200', 'bg-white', 'text-slate-500', 'shadow-sm', 'hover:bg-slate-50', 'hover:text-sky-600', 'hover:border-sky-300');
+                tab.classList.add('border-sky-600', 'bg-sky-600', 'text-white', 'shadow-xl', 'shadow-sky-900/20', 'active');
+
+                clientContents.forEach(content => {
+                    if (content.id === `tab-${target}`) {
+                        content.classList.remove('hidden');
+                        setTimeout(() => {
+                            content.classList.remove('opacity-0', 'translate-y-4');
+                            content.classList.add('opacity-100', 'translate-y-0');
+                        }, 10);
+                    } else {
+                        content.classList.add('hidden', 'opacity-0', 'translate-y-4');
+                        content.classList.remove('opacity-100', 'translate-y-0');
+                    }
                 });
             });
         });
