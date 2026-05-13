@@ -614,22 +614,35 @@
                     <div class="grid lg:grid-cols-3 gap-10">
                         <!-- Column 1: Akta -->
                         <div class="space-y-6" data-aos="fade-up">
-                            <div class="flex items-center gap-4 bg-[#0a2e5c] text-white p-4 rounded-xl shadow-lg">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#0a2e5c] font-black text-xl flex-shrink-0">
-                                    1</div>
-                                <h4 class="font-black text-xs uppercase tracking-wider leading-tight">AKTA
-                                    PENDIRIAN <br> PERSEROAN TERBATAS</h4>
-                            </div>
                             <div
-                                class="aspect-[3/4.2] rounded-2xl border-4 border-slate-100 overflow-hidden shadow-xl bg-white group cursor-pointer">
-                                <img src="assets/img/surat/akta.jpg" alt="Akta PT TZI"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    01
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Akta Pendirian <br>
+                                    <span class="text-sky-400 text-[10px]">Perseroan Terbatas</span></h4>
                             </div>
-                            <div class="grid grid-cols-1 gap-3">
-                                <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100">
+
+                            <div onclick="openModal('assets/img/surat/akta.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
                                     <div
-                                        class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600">
+                                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone"
+                                            class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/akta.jpg" alt="Akta PT TZI"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-3">
+                                <div
+                                    class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-sky-200 transition-colors">
+                                    <div
+                                        class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 flex-shrink-0">
                                         <iconify-icon icon="solar:document-bold-duotone" class="text-xl"></iconify-icon>
                                     </div>
                                     <div>
@@ -637,9 +650,10 @@
                                         <p class="text-sm font-black text-slate-900">41</p>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <div
+                                    class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-sky-200 transition-colors">
                                     <div
-                                        class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600">
+                                        class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 flex-shrink-0">
                                         <iconify-icon icon="solar:calendar-bold-duotone" class="text-xl"></iconify-icon>
                                     </div>
                                     <div>
@@ -652,114 +666,146 @@
 
                         <!-- Column 2: SK Pengesahan -->
                         <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="flex items-center gap-4 bg-[#0a2e5c] text-white p-4 rounded-xl shadow-lg">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#0a2e5c] font-black text-xl flex-shrink-0">
-                                    2</div>
-                                <h4 class="font-black text-xs uppercase tracking-wider leading-tight">SK
-                                    PENGESAHAN <br> KEMENKUMHAM</h4>
-                            </div>
                             <div
-                                class="aspect-[3/4.2] rounded-2xl border-4 border-slate-100 overflow-hidden shadow-xl bg-white group cursor-pointer">
-                                <img src="assets/img/surat/sk-pengesahan.jpg" alt="SK Kemenkumham"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            </div>
-                            <div class="flex items-center gap-4 bg-sky-50 p-4 rounded-xl border border-sky-100">
+                                class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
                                 <div
-                                    class="w-10 h-10 rounded-lg bg-sky-600 flex items-center justify-center text-white">
+                                    class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    02
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">SK Pengesahan <br>
+                                    <span class="text-sky-400 text-[10px]">Kemenkumham</span></h4>
+                            </div>
+
+                            <div onclick="openModal('assets/img/surat/sk-pengesahan.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div
+                                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone"
+                                            class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/sk-pengesahan.jpg" alt="SK Kemenkumham"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+
+                            <div
+                                class="flex items-center gap-4 bg-sky-50 p-4 rounded-xl border border-sky-200 hover:border-sky-300 transition-colors">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-sky-600 flex items-center justify-center text-white flex-shrink-0">
                                     <iconify-icon icon="solar:verified-check-bold" class="text-xl"></iconify-icon>
                                 </div>
                                 <div>
-                                    <p class="text-[10px] text-sky-600 uppercase font-bold">Nomor SK Pengesahan
-                                    </p>
-                                    <p class="text-xs font-black text-slate-900">AHU-0025685.AH.01.01.TAHUN 2023
-                                    </p>
+                                    <p class="text-[10px] text-sky-600 uppercase font-bold">Nomor SK Pengesahan</p>
+                                    <p class="text-xs font-black text-slate-900 break-all">AHU-0025685.AH.01.01.TAHUN
+                                        2023</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Column 3: Lampiran & Summary -->
                         <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="flex items-center gap-4 bg-[#0a2e5c] text-white p-4 rounded-xl shadow-lg">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#0a2e5c] font-black text-xl flex-shrink-0">
-                                    3</div>
-                                <h4 class="font-black text-xs uppercase tracking-wider leading-tight">LAMPIRAN
-                                    SK <br> KEMENKUMHAM</h4>
-                            </div>
                             <div
-                                class="aspect-[3/1.8] rounded-2xl border-4 border-slate-100 overflow-hidden shadow-xl bg-white group cursor-pointer mb-6">
+                                class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    03
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Lampiran SK <br>
+                                    <span class="text-sky-400 text-[10px]">Kemenkumham</span></h4>
+                            </div>
+
+                            <div onclick="openModal('assets/img/surat/lampiran-sk.jpg')"
+                                class="relative aspect-[3/1.8] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div
+                                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone"
+                                            class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
                                 <img src="assets/img/surat/lampiran-sk.jpg" alt="Lampiran SK"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
                             </div>
 
                             <!-- Ringkasan Informasi -->
                             <div class="bg-slate-900 rounded-2xl p-6 text-white shadow-xl">
                                 <h5
-                                    class="text-xs font-black uppercase tracking-[0.2em] text-sky-500 mb-6 flex items-center gap-2">
+                                    class="text-xs font-black uppercase tracking-[0.2em] text-sky-500 mb-5 flex items-center gap-2">
                                     <iconify-icon icon="solar:info-square-bold-duotone" class="text-lg"></iconify-icon>
                                     Ringkasan Informasi
                                 </h5>
                                 <div class="space-y-4">
-                                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
                                         <div class="flex items-center gap-3">
                                             <iconify-icon icon="solar:bank-bold-duotone"
-                                                class="text-sky-500"></iconify-icon>
+                                                class="text-sky-500 text-lg"></iconify-icon>
                                             <span class="text-[11px] font-bold uppercase text-slate-400">Modal
                                                 Dasar</span>
                                         </div>
-                                        <span class="text-sm font-black">Rp. 1.500.000.000</span>
+                                        <span class="text-sm font-black tracking-wide">Rp. 1.500.000.000</span>
                                     </div>
-                                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
                                         <div class="flex items-center gap-3">
                                             <iconify-icon icon="solar:graph-up-bold-duotone"
-                                                class="text-sky-500"></iconify-icon>
-                                            <span class="text-[11px] font-bold uppercase text-slate-400">Modal
-                                                Ditempatkan</span>
+                                                class="text-sky-500 text-lg"></iconify-icon>
+                                            <span
+                                                class="text-[11px] font-bold uppercase text-slate-400">Ditempatkan</span>
                                         </div>
-                                        <span class="text-sm font-black">Rp. 1.500.000.000</span>
+                                        <span class="text-sm font-black tracking-wide">Rp. 1.500.000.000</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center gap-3">
                                             <iconify-icon icon="solar:box-bold-duotone"
-                                                class="text-sky-500"></iconify-icon>
+                                                class="text-sky-500 text-lg"></iconify-icon>
                                             <span class="text-[11px] font-bold uppercase text-slate-400">Modal
                                                 Disetor</span>
                                         </div>
-                                        <span class="text-sm font-black">Rp. 1.500.000.000</span>
+                                        <span class="text-sm font-black tracking-wide">Rp. 1.500.000.000</span>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Komposisi Pemegang Saham -->
-                            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-xl">
-                                <h5 class="text-xs font-black uppercase tracking-[0.1em] text-slate-900 mb-6">
-                                    Komposisi Pemegang Saham</h5>
-                                <div class="flex items-center gap-6">
+                            <div
+                                class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                                <h5
+                                    class="text-[11px] font-black uppercase tracking-[0.1em] text-slate-900 mb-5 flex items-center gap-2">
+                                    <iconify-icon icon="solar:pie-chart-2-bold-duotone"
+                                        class="text-sky-600 text-lg"></iconify-icon>
+                                    Komposisi Pemegang Saham
+                                </h5>
+                                <div class="flex items-center gap-5">
                                     <!-- Donut Chart (CSS) -->
-                                    <div class="relative w-24 h-24 rounded-full flex-shrink-0"
-                                        style="background: conic-gradient(#0369a1 0% 66.67%, #0ea5e9 66.67% 100%);">
+                                    <div class="relative w-20 h-20 rounded-full flex-shrink-0 shadow-inner border-4 border-slate-50"
+                                        style="background: conic-gradient(#0ea5e9 0% 66.67%, #0284c7 66.67% 100%);">
                                         <div
-                                            class="absolute inset-4 bg-white rounded-full flex items-center justify-center shadow-inner">
+                                            class="absolute inset-3 bg-white rounded-full flex items-center justify-center shadow-sm">
                                             <iconify-icon icon="solar:users-group-two-rounded-bold"
-                                                class="text-slate-200 text-2xl"></iconify-icon>
+                                                class="text-slate-300 text-xl"></iconify-icon>
                                         </div>
                                     </div>
                                     <div class="space-y-3">
-                                        <div class="flex items-start gap-2">
-                                            <div class="w-3 h-3 rounded-sm bg-[#0369a1] mt-0.5"></div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div
+                                                class="w-2.5 h-2.5 rounded-full bg-[#0ea5e9] mt-0.5 flex-shrink-0 shadow-sm">
+                                            </div>
                                             <div>
-                                                <p class="text-[10px] font-black leading-tight">66,67%</p>
-                                                <p class="text-[9px] text-slate-500 uppercase font-bold">TENGKU
-                                                    ZULHENDRA ISA <br> (DIREKTUR)</p>
+                                                <p class="text-[11px] font-black leading-none text-slate-800">66,67%</p>
+                                                <p class="text-[9px] text-slate-500 font-bold mt-1">TENGKU ZULHENDRA ISA
+                                                    <br><span class="text-sky-600">(DIREKTUR)</span></p>
                                             </div>
                                         </div>
-                                        <div class="flex items-start gap-2">
-                                            <div class="w-3 h-3 rounded-sm bg-[#0ea5e9] mt-0.5"></div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div
+                                                class="w-2.5 h-2.5 rounded-full bg-[#0284c7] mt-0.5 flex-shrink-0 shadow-sm">
+                                            </div>
                                             <div>
-                                                <p class="text-[10px] font-black leading-tight">33,33%</p>
-                                                <p class="text-[9px] text-slate-500 uppercase font-bold">ISMAL
-                                                    ABDUL RAHMAN SIREGAR <br> (KOMISARIS)</p>
+                                                <p class="text-[11px] font-black leading-none text-slate-800">33,33%</p>
+                                                <p class="text-[9px] text-slate-500 font-bold mt-1">ISMAL ABDUL RAHMAN
+                                                    S. <br><span class="text-sky-600">(KOMISARIS)</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -769,13 +815,506 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ── PUBLIC REGISTRATION & BUSINESS LICENSE ── -->
+            <div class="relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200 shadow-2xl mt-16">
+                <!-- Section Header -->
+                <div class="relative bg-slate-900 py-16 px-10 overflow-hidden">
+                    <div class="absolute inset-0 opacity-20">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop"
+                            alt="Business License Theme" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent">
+                    </div>
+
+                    <div class="relative z-10">
+                        <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tight mb-2">
+                            PUBLIC REGISTRATION & <br>
+                            <span class="text-sky-500">BUSINESS LICENSE</span>
+                        </h2>
+                        <div class="w-32 h-1.5 bg-sky-600 rounded-full mb-8"></div>
+
+                        <div class="max-w-2xl">
+                            <h3 class="text-sky-500 font-black uppercase tracking-widest text-sm mb-4">Business
+                                Registration & Licensing</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Legalitas operasional perusahaan telah terdaftar secara resmi
+                                melalui sistem OSS, dengan ruang lingkup usaha yang relevan
+                                untuk pengadaan, instalasi, perdagangan, dan solusi teknis
+                                multi-industri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <!-- Top Row: BNRI & NIB (Grid 1 and 2) -->
+                    <div class="grid lg:grid-cols-2 gap-10 mb-12">
+                        <!-- Column 1: BNRI -->
+                        <div class="space-y-6" data-aos="fade-up">
+                            <div
+                                class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    01</div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Berita Negara <br>
+                                    <span class="text-sky-400 text-[10px]">Republik Indonesia</span></h4>
+                            </div>
+                            <div onclick="openModal('assets/img/surat/berita-acara.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div
+                                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone"
+                                            class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/berita-acara.jpg" alt="Berita Negara RI"
+                                    onerror="this.src='assets/img/surat/akta.jpg'"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Column 2: NIB -->
+                        <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    02</div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Nomor Induk
+                                    Berusaha <br> <span class="text-sky-400 text-[10px]">(NIB)</span></h4>
+                            </div>
+                            <div onclick="openModal('assets/img/surat/nib.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div
+                                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone"
+                                            class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/nib.jpg" alt="NIB"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Lampiran NIB (Landscape style with 3 grids) -->
+                    <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                03</div>
+                            <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Lampiran NIB / KBLI
+                                <br> <span class="text-sky-400 text-[10px]">Daftar Klasifikasi Baku Lapangan
+                                    Usaha</span></h4>
+                        </div>
+
+                        <!-- Landscape Container -->
+                        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-2 sm:p-6 shadow-sm">
+                            <div class="rounded-xl border border-slate-200 shadow-sm bg-white overflow-hidden w-full">
+                                <table class="w-full table-fixed break-words text-left border-collapse text-[7px] sm:text-[9px] md:text-[11px] lg:text-xs">
+                                    <thead>
+                                        <tr class="bg-slate-900 text-white">
+                                            <th class="p-1 sm:p-2 text-center align-middle border-r border-slate-800 w-[4%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:list-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">No.</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 text-center align-middle border-r border-slate-800 w-[6%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:code-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Kode<br>KBLI</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 align-middle border-r border-slate-800 w-[17%]">
+                                                <div class="flex flex-col items-center sm:items-start text-center sm:text-left gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:tag-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Judul KBLI</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 align-middle border-r border-slate-800 w-[21%]">
+                                                <div class="flex flex-col items-center sm:items-start text-center sm:text-left gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:map-point-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Lokasi Usaha</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 text-center align-middle border-r border-slate-800 w-[9%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:danger-triangle-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Risiko</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 align-middle border-r border-slate-800 text-center w-[12%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:document-text-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Perizinan</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 text-center align-middle border-r border-slate-800 w-[6%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:ticket-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Jenis</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 text-center align-middle border-r border-slate-800 w-[9%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:check-circle-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Status</span>
+                                                </div>
+                                            </th>
+                                            <th class="p-1 sm:p-2 align-middle text-center w-[16%]">
+                                                <div class="flex flex-col items-center gap-0.5 sm:gap-1">
+                                                    <iconify-icon icon="solar:info-circle-bold-duotone" class="text-sky-400 text-xs sm:text-sm"></iconify-icon>
+                                                    <span class="font-bold uppercase tracking-wider">Keterangan</span>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-slate-600 divide-y divide-slate-100">
+                                        <!-- row 1 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">1</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">47411</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:laptop-minimalistic-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Perdagangan Eceran Komputer dan Perlengkapannya</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-green-100 text-green-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Rendah</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 align-top">-</td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">2</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">47420</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:videocamera-record-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Perdagangan Eceran Khusus Peralatan Audio dan Video di Toko</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-green-100 text-green-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Rendah</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 align-top">-</td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">3</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">47591</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:armchair-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Perdagangan Eceran Furnitur</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-green-100 text-green-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Rendah</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 align-top">-</td>
+                                        </tr>
+                                        <!-- row 4 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">4</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">47611</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:pen-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Perdagangan Eceran Alat Tulis Menulis dan Gambar</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-green-100 text-green-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Rendah</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 align-top">-</td>
+                                        </tr>
+                                        <!-- row 5 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">5</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">47920</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:wallet-money-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Perdagangan Eceran Atas Dasar Balas Jasa (Fee) atau Kontrak</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-green-100 text-green-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Rendah</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 align-top">-</td>
+                                        </tr>
+                                        <!-- row 6 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">6</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">43213</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:cpu-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Instalasi Elektronika</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-orange-100 text-orange-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Menengah<br class="hidden sm:block">Tinggi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB dan Sertifikat Standar</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-yellow-100 text-yellow-800 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Belum<br class="hidden lg:block">Terverifikasi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                        </tr>
+                                        <!-- row 7 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">7</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">43224</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:snowflake-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Instalasi Pendingin dan Ventilasi Udara</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-orange-100 text-orange-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Menengah<br class="hidden sm:block">Tinggi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB dan Sertifikat Standar</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-yellow-100 text-yellow-800 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Belum<br class="hidden lg:block">Terverifikasi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                        </tr>
+                                        <!-- row 8 -->
+                                        <tr class="hover:bg-sky-50 transition-colors">
+                                            <td class="p-1 sm:p-2 text-center font-bold text-slate-900 border-r border-slate-100 align-top">8</td>
+                                            <td class="p-1 sm:p-2 font-bold text-sky-600 border-r border-slate-100 align-top text-center">43304</td>
+                                            <td class="p-1 sm:p-2 font-medium text-slate-800 border-r border-slate-100 align-top">
+                                                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-1.5">
+                                                    <iconify-icon icon="solar:palette-bold-duotone" class="text-sky-500 text-sm flex-shrink-0 mt-0.5"></iconify-icon>
+                                                    <span>Dekorasi Interior</span>
+                                                </div>
+                                            </td>
+                                            <td class="p-1 sm:p-2 leading-tight border-r border-slate-100 align-top text-[6px] sm:text-[9px] md:text-[11px]">JL. Gunung Bendahara No.16 A, Desa/Kelurahan Pematangkapau, Kec. Kulim, Kota Pekanbaru, Provinsi Riau, Kode Pos: 28285</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-orange-100 text-orange-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Menengah<br class="hidden sm:block">Tinggi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 font-medium border-r border-slate-100 align-top text-center">NIB dan Sertifikat Standar</td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-blue-100 text-blue-700 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Terbit</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center border-r border-slate-100 align-top">
+                                                <span class="inline-block bg-yellow-100 text-yellow-800 px-1 py-0.5 rounded text-[6px] sm:text-[9px] md:text-[11px] font-bold">Belum<br class="hidden lg:block">Terverifikasi</span>
+                                            </td>
+                                            <td class="p-1 sm:p-2 text-center text-slate-400 border-r border-slate-100 align-top">-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-6 p-5 bg-sky-50 rounded-xl border border-sky-100">
+                                <h5 class="text-sm font-black uppercase text-sky-900 mb-2 flex items-center gap-2">
+                                    <iconify-icon icon="solar:info-square-bold-duotone" class="text-sky-600 text-lg"></iconify-icon>
+                                    KBLI Relevan dengan Layanan Perusahaan
+                                </h5>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    <span class="font-bold">Catatan:</span> Untuk kode KBLI dengan tingkat risiko Menengah Tinggi, wajib memenuhi persyaratan standar melalui sistem OSS sesuai ketentuan yang berlaku.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── TAX & FINANCIAL COMPLIANCE ── -->
+            <div class="relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200 shadow-2xl mt-16">
+                <!-- Section Header -->
+                <div class="relative bg-slate-900 py-16 px-10 overflow-hidden">
+                    <div class="absolute inset-0 opacity-20">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+                            alt="Finance and Tax Theme" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent">
+                    </div>
+
+                    <div class="relative z-10">
+                        <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tight mb-2">
+                            TAX & FINANCIAL <br>
+                            <span class="text-sky-500">COMPLIANCE</span>
+                        </h2>
+                        <div class="w-32 h-1.5 bg-sky-600 rounded-full mb-8"></div>
+
+                        <div class="max-w-2xl">
+                            <h3 class="text-sky-500 font-black uppercase tracking-widest text-sm mb-4">Tax & Banking Compliance</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                PT Teknokrat Zamrud Integrasi memenuhi kewajiban perpajakan dan didukung referensi perbankan resmi sebagai bentuk kesiapan dalam menjalankan transaksi bisnis profesional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <!-- Top Row: NPWP -->
+                    <div class="mb-12" data-aos="fade-up">
+                        <div class="max-w-md mx-auto space-y-6">
+                            <div class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    01
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">NPWP <br>
+                                    <span class="text-sky-400 text-[10px]">Perusahaan</span></h4>
+                            </div>
+
+                            <div onclick="openModal('assets/img/surat/npwp.jpg')"
+                                class="relative aspect-[1.58/1] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone" class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/npwp.jpg" alt="NPWP Perusahaan" onerror="this.src='assets/img/surat/akta.jpg'"
+                                    class="w-full h-full object-contain bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: PKP & Referensi Bank -->
+                    <div class="grid md:grid-cols-2 gap-10 mb-12 max-w-4xl mx-auto">
+                        <!-- Column 1: PKP -->
+                        <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    02
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Surat Pengukuhan <br>
+                                    <span class="text-sky-400 text-[10px]">Pengusaha Kena Pajak (PKP)</span></h4>
+                            </div>
+
+                            <div onclick="openModal('assets/img/surat/pkp.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone" class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/pkp.jpg" alt="Surat Pengukuhan PKP" onerror="this.src='assets/img/surat/akta.jpg'"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Referensi Bank -->
+                        <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center gap-4 bg-slate-900 text-white p-5 rounded-2xl shadow-lg min-h-[90px]">
+                                <div class="w-12 h-12 rounded-xl bg-sky-500 flex items-center justify-center text-white font-black text-xl flex-shrink-0 shadow-inner">
+                                    03
+                                </div>
+                                <h4 class="font-black text-sm uppercase tracking-wider leading-snug">Referensi Bank <br>
+                                    <span class="text-sky-400 text-[10px]">Dukungan Finansial Resmi</span></h4>
+                            </div>
+
+                            <div onclick="openModal('assets/img/surat/referensi-bank.jpg')"
+                                class="relative aspect-[3/4.2] rounded-2xl border border-slate-200 overflow-hidden shadow-sm bg-slate-50 group cursor-pointer hover:shadow-xl hover:border-sky-300 transition-all duration-300 p-2">
+                                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10 rounded-xl m-2">
+                                    <div class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold text-xs flex items-center gap-2 border border-white/30 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <iconify-icon icon="solar:maximize-square-minimalistic-bold-duotone" class="text-lg"></iconify-icon> Preview Full
+                                    </div>
+                                </div>
+                                <img src="assets/img/surat/referensi-bank.jpg" alt="Referensi Bank" onerror="this.src='assets/img/surat/akta.jpg'"
+                                    class="w-full h-full object-cover object-top bg-white rounded-xl shadow-sm group-hover:scale-[1.02] transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Feature Grid: Kepatuhan & Kredibilitas -->
+                    <div class="pt-10 border-t border-slate-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-center mb-10">
+                            <h3 class="text-2xl font-black uppercase text-slate-900 mb-2">Kepatuhan & <span class="text-sky-600">Kredibilitas Keuangan</span></h3>
+                            <div class="w-16 h-1 bg-sky-600 mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all text-center group">
+                                <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-sky-600 mx-auto mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:document-text-bold-duotone" class="text-2xl"></iconify-icon>
+                                </div>
+                                <h4 class="text-sm font-black uppercase text-slate-900 mb-2">Patuh Pajak</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Terdaftar NPWP dan dikukuhkan sebagai PKP resmi.</p>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all text-center group">
+                                <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-sky-600 mx-auto mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:shield-check-bold-duotone" class="text-2xl"></iconify-icon>
+                                </div>
+                                <h4 class="text-sm font-black uppercase text-slate-900 mb-2">Legal & Resmi</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Memenuhi seluruh ketentuan perpajakan yang berlaku.</p>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all text-center group">
+                                <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-sky-600 mx-auto mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:card-2-bold-duotone" class="text-2xl"></iconify-icon>
+                                </div>
+                                <h4 class="text-sm font-black uppercase text-slate-900 mb-2">Dukungan Bank</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Didukung referensi resmi dari bank terpercaya.</p>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all text-center group">
+                                <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-sky-600 mx-auto mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:wallet-money-bold-duotone" class="text-2xl"></iconify-icon>
+                                </div>
+                                <h4 class="text-sm font-black uppercase text-slate-900 mb-2">Siap Bertransaksi</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Kesiapan dalam menjalankan transaksi bisnis profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
             <!-- Banking & Address Highlight -->
             <div class="mt-12 grid lg:grid-cols-2 gap-8">
                 <div class="bg-sky-600 p-8 rounded-[2rem] text-white shadow-xl shadow-sky-900/20" data-aos="fade-right">
                     <div class="flex items-center gap-4 mb-6">
                         <div
                             class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
-                            <iconify-icon icon="solar:bank-bold-duotone" class="text-2xl"></iconify-icon>
+                            <iconify-icon icon="solar:wallet-money-bold-duotone" class="text-2xl"></iconify-icon>
                         </div>
                         <h4 class="font-black uppercase text-sm tracking-widest">Rekening Perusahaan</h4>
                     </div>
@@ -931,6 +1470,20 @@
         </div>
     </footer>
 
+    <!-- ── IMAGE PREVIEW MODAL ── -->
+    <div id="image-modal"
+        class="fixed inset-0 z-[100] bg-slate-900/95 hidden items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-md">
+        <button id="close-modal"
+            class="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors border border-white/20 z-50">
+            <iconify-icon icon="solar:close-circle-bold" class="text-3xl"></iconify-icon>
+        </button>
+        <div class="max-w-4xl max-h-[90vh] w-full p-6 transform scale-95 transition-transform duration-300 flex items-center justify-center"
+            id="modal-content">
+            <img id="modal-image" src="" alt="Full Preview"
+                class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl">
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 900, once: true, offset: 80 });
@@ -960,6 +1513,39 @@
                 });
             });
         }
+
+        // Image Modal Logic
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const modalContent = document.getElementById('modal-content');
+        const closeModal = document.getElementById('close-modal');
+
+        function openModal(imgSrc) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalImg.src = imgSrc;
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modalImg.src = '';
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        if (closeModal) closeModal.addEventListener('click', closeImageModal);
+        if (modal) modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === modalContent) closeImageModal();
+        });
     </script>
 </body>
 
