@@ -27,6 +27,13 @@
             background-position: center;
         }
 
+        .footer-bg {
+            position: relative;
+            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('assets/img/bg-image.png');
+            background-size: cover;
+            background-position: center;
+        }
+
         .btn-transition {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -57,7 +64,8 @@
 <body class="text-slate-900 overflow-x-hidden">
 
     <!-- ── NAVIGATION ── -->
-    <nav class="fixed w-full z-50 transition-all duration-500 bg-[#0a1628]/95 backdrop-blur-md border-b border-white/5 py-4">
+    <nav
+        class="fixed w-full z-50 transition-all duration-500 bg-[#0a1628]/95 backdrop-blur-md border-b border-white/5 py-4">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2.5">
                 <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -80,9 +88,12 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="hidden lg:flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1 mr-2">
-                    <button class="flex items-center justify-center w-7 h-7 rounded-full bg-sky-600 text-white text-[9px] font-black uppercase">ID</button>
-                    <button class="flex items-center justify-center w-7 h-7 rounded-full text-slate-400 hover:text-white text-[9px] font-black uppercase transition-all">EN</button>
+                <div
+                    class="hidden lg:flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1 mr-2">
+                    <button
+                        class="flex items-center justify-center w-7 h-7 rounded-full bg-sky-600 text-white text-[9px] font-black uppercase">ID</button>
+                    <button
+                        class="flex items-center justify-center w-7 h-7 rounded-full text-slate-400 hover:text-white text-[9px] font-black uppercase transition-all">EN</button>
                 </div>
                 <a href="contact.html"
                     class="btn-transition hidden sm:inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white text-[11px] font-bold uppercase tracking-widest px-5 py-2.5 rounded-lg shadow-lg shadow-sky-900/40">
@@ -111,8 +122,10 @@
                 </a>
                 <div class="flex items-center gap-4">
                     <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1">
-                        <button class="flex items-center justify-center w-8 h-8 rounded-full bg-sky-600 text-white text-[10px] font-black uppercase">ID</button>
-                        <button class="flex items-center justify-center w-8 h-8 rounded-full text-slate-400 hover:text-white text-[10px] font-black uppercase transition-all">EN</button>
+                        <button
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-sky-600 text-white text-[10px] font-black uppercase">ID</button>
+                        <button
+                            class="flex items-center justify-center w-8 h-8 rounded-full text-slate-400 hover:text-white text-[10px] font-black uppercase transition-all">EN</button>
                     </div>
                     <button id="menu-close" class="text-white text-4xl">
                         <iconify-icon icon="solar:close-circle-bold"></iconify-icon>
@@ -191,8 +204,11 @@
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1715243168">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </section>
@@ -201,10 +217,11 @@
     <main class="py-20">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-16 items-start">
-                
+
                 <!-- Left: Image Gallery -->
                 <div data-aos="fade-right">
-                    <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3] bg-white">
+                    <div
+                        class="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3] bg-white">
                         <img id="product-image" src="" alt="Product Image" class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -212,8 +229,12 @@
                 <!-- Right: Details -->
                 <div class="space-y-10" data-aos="fade-left">
                     <div>
-                        <span id="product-kbli" class="text-[10px] font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-3 py-1 rounded-full mb-4 inline-block">KBLI 00000</span>
-                        <h2 id="detail-title" class="text-4xl md:text-5xl font-black text-slate-900 uppercase leading-none mb-6">NAMA PRODUK</h2>
+                        <span id="product-kbli"
+                            class="text-[10px] font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-3 py-1 rounded-full mb-4 inline-block">KBLI
+                            00000</span>
+                        <h2 id="detail-title"
+                            class="text-4xl md:text-5xl font-black text-slate-900 uppercase leading-none mb-6">NAMA
+                            PRODUK</h2>
                         <p id="product-description" class="text-slate-600 leading-relaxed text-lg">
                             Deskripsi lengkap produk akan tampil di sini berdasarkan pilihan produk dari katalog.
                         </p>
@@ -221,7 +242,8 @@
 
                     <!-- Brands Involved -->
                     <div id="brand-section" class="pt-8 border-t border-slate-100">
-                        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Brands & Partners</p>
+                        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Brands &
+                            Partners</p>
                         <div id="brand-logos" class="flex flex-wrap gap-6 items-center">
                             <!-- Logos will be injected here -->
                         </div>
@@ -246,7 +268,7 @@
     </main>
 
     <!-- ── FOOTER ── -->
-    <footer class="bg-[#0a1628] pt-20 pb-10 border-t border-sky-900/20">
+    <footer class="footer-bg pt-20 pb-10 border-t border-sky-900/20">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
@@ -422,7 +444,7 @@
             document.getElementById('product-description').textContent = product.description;
             document.getElementById('product-image').src = product.image;
             document.getElementById('product-image').alt = product.title;
-            
+
             // WhatsApp Link
             const waMsg = encodeURIComponent(`Halo, saya tertarik dengan produk ${product.title}. Bisa minta informasi lebih lanjut?`);
             document.getElementById('wa-link').href = `https://wa.me/6281371273367?text=${waMsg}`;
@@ -433,13 +455,13 @@
             product.brands.forEach(brand => {
                 const brandEl = document.createElement('div');
                 brandEl.className = 'w-24 h-12 md:w-28 md:h-14 bg-white border border-slate-200 rounded-lg flex items-center justify-center p-2 shadow-sm hover:border-sky-300 transition-colors';
-                
+
                 const imgEl = document.createElement('img');
                 imgEl.src = brand.img;
                 imgEl.alt = brand.name;
                 imgEl.title = brand.name;
                 imgEl.className = 'max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300';
-                
+
                 brandEl.appendChild(imgEl);
                 brandContainer.appendChild(brandEl);
             });
